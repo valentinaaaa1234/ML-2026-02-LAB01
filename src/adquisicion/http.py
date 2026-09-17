@@ -32,9 +32,22 @@ class ClienteHTTP:
             allow_redirects=permitir_redirects,
         )
         respuesta.raise_for_status()
-        if not respuesta.encoding:
-            respuesta.encoding = respuesta.apparent_encoding or "utf-8"
+        self._corregir_codificacion(respuesta)
         return respuesta
+
+    @staticmethod
+    def _corregir_codificacion(respuesta: requests.Response) -> None:
+        """Evita acentos corruptos cuando el servidor no declara charset.
+
+        Si la cabecera Content-Type no trae charset, requests asume
+        ISO-8859-1 por compatibilidad con el estandar HTTP antiguo. La
+        mayoria de los medios chilenos publica en UTF-8, por lo que esa
+        suposicion produce texto como "aÃ±os" en vez de "años". En ese
+        caso se deduce la codificacion real desde el contenido.
+        """
+        content_type = respuesta.headers.get("Content-Type", "").lower()
+        if "charset=" not in content_type:
+            respuesta.encoding = respuesta.apparent_encoding or "utf-8"
 
     def texto(self, url: str) -> str:
         """Cuerpo de la respuesta como texto."""

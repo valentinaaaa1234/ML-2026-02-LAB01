@@ -1,4 +1,9 @@
 consulta,categoria_busqueda,limite
-homicidio Chile,homicidio,5
-trafico de drogas Chile,trafico_drogas,5
-robo con violencia Chile,robo_con_violencia,5
+homicidio La Serena,homicidio,10
+homicidio Coquimbo,homicidio,10
+homicidio Ovalle,homicidio,10
+homicidio Illapel,homicidio,5
+homicidio Region de Coquimbo,homicidio,10
+femicidio Region de Coquimbo,femicidio,10
+asesinato La Serena Coquimbo,homicidio,10
+crimen violento Region de Coquimbo,homicidio,10
