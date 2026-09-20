@@ -85,6 +85,23 @@ class ExtractorGemini(ExtractorLLM):
     # Recorte defensivo: los textos muy largos encarecen y degradan la extracción.
     MAX_CARACTERES_TEXTO = 12000
 
+    # Vocabularios cerrados del prompt. Sin ellos el modelo copia la
+    # formulación literal de cada noticia y genera decenas de variantes
+    # para la misma idea, lo que fragmenta el grafo de Obsidian.
+    ROLES_PERMITIDOS = (
+        "victima, imputado, detenido, acusado, condenado, testigo, profugo"
+    )
+    DELITOS_PERMITIDOS = (
+        "homicidio, femicidio, parricidio, homicidio frustrado, "
+        "robo con violencia, robo con homicidio, robo, hurto, "
+        "trafico de drogas, microtrafico, porte ilegal de armas, "
+        "lesiones, secuestro, amenazas, receptacion, otro"
+    )
+    RELACIONES_PERMITIDAS = (
+        "VICTIMA_DE, IMPUTADO_POR, DETENIDO_EN, OCURRIO_EN, INVESTIGA, "
+        "OPERA_EN, UTILIZO, INCAUTADO_EN, PERTENECE_A"
+    )
+
     def __init__(self, dir_json: Path = DIR_JSON, reusar_existentes: bool = True) -> None:
         self.dir_json = dir_json
         self.dir_json.mkdir(parents=True, exist_ok=True)
@@ -92,20 +109,82 @@ class ExtractorGemini(ExtractorLLM):
         self._cliente = None
 
     def construir_prompt(self, noticia: NoticiaFuente) -> str:
+        """Prompt con esquema estricto y vocabularios cerrados.
+
+        La versión inicial solo pedía "información explícita" y dejaba los
+        valores libres. Medido con el validador sobre 14 noticias, eso
+        producía tres problemas: el 44% de las personas extraídas eran
+        descripciones ("Hombre de 29 años") en vez de nombres, había
+        autoridades que solo declaran registradas como participantes del
+        hecho, y relaciones cuyos extremos no coincidían con ninguna
+        entidad declarada, lo que rompía los enlaces del vault.
+
+        Este prompt cierra esos tres huecos con reglas explícitas y
+        vocabularios acotados.
+        """
         campos = ", ".join(self.CAMPOS_OBLIGATORIOS)
         texto = (noticia.texto_limpio or "").strip()
         if len(texto) > self.MAX_CARACTERES_TEXTO:
             texto = texto[: self.MAX_CARACTERES_TEXTO]
+
         return (
-            "Analiza la siguiente noticia delictual.\n\n"
-            "Extrae solamente informacion explicita. No inventes datos, "
-            "entidades, roles ni relaciones.\n"
-            "Devuelve exclusivamente JSON valido, sin markdown ni explicaciones.\n\n"
-            f"Campos obligatorios: {campos}.\n"
-            "personas: lista de objetos con claves nombre y rol.\n"
-            "objetos: lista de objetos con claves tipo, nombre, cantidad, unidad.\n"
-            "relaciones: lista de objetos con claves origen, tipo, destino.\n"
-            "Si un dato no aparece, usa null o una lista vacia.\n\n"
+            "Eres un analista de informacion delictual. Extrae datos "
+            "estructurados de la siguiente noticia.\n\n"
+            "REGLAS GENERALES\n"
+            "- Extrae solo informacion explicita en el texto. No infieras "
+            "ni completes con conocimiento externo.\n"
+            "- No afirmes culpabilidad: usa el rol procesal que indique la "
+            "noticia.\n"
+            "- Si un dato no aparece, usa null o una lista vacia. Nunca "
+            "rellenes con descripciones ni con texto inventado.\n"
+            "- Devuelve exclusivamente JSON valido, sin markdown ni "
+            "explicaciones.\n\n"
+            f"CAMPOS OBLIGATORIOS: {campos}.\n\n"
+            "REGLAS POR CAMPO\n\n"
+            "fecha_publicacion: formato AAAA-MM-DD. Si la noticia no "
+            "indica la fecha, usa null. No inventes una fecha ni uses "
+            "expresiones como 'ayer' o 'hoy'.\n\n"
+            "personas: lista de objetos con claves 'nombre' y 'rol'.\n"
+            "  - Incluye SOLO a quienes intervienen en el hecho delictual: "
+            "victima, imputado, detenido, acusado, condenado, testigo "
+            "presencial o profugo.\n"
+            "  - NO incluyas a quienes solo declaran o informan: fiscales, "
+            "policias, seremis, delegados, alcaldes, jueces, abogados, "
+            "peritos, voceros ni expertos. Sus instituciones van en "
+            "'organizaciones'.\n"
+            "  - 'nombre' debe ser un nombre propio tal como aparece en la "
+            "noticia. Si la noticia no entrega el nombre, usa null en ese "
+            "campo. Esta PROHIBIDO escribir descripciones como 'Hombre de "
+            "29 anos', 'Sujeto detenido', 'Victima (hombre)' o 'imputado'.\n"
+            f"  - 'rol' debe ser exactamente uno de: {self.ROLES_PERMITIDOS}.\n\n"
+            f"delitos: lista de strings elegidos de: {self.DELITOS_PERMITIDOS}.\n"
+            "  - Usa la categoria general y no la formula juridica literal: "
+            "'homicidio calificado con alevosia' se registra como "
+            "'homicidio'.\n"
+            "  - Si el delito no encaja en ninguna categoria, usa 'otro'.\n\n"
+            "organizaciones: lista de strings. Instituciones policiales, "
+            "judiciales, de gobierno, bandas criminales, empresas u "
+            "hospitales. Escribe cada institucion una sola vez y con el "
+            "mismo nombre si vuelve a aparecer.\n\n"
+            "lugares: lista de strings. SOLO ubicaciones geograficas: "
+            "comunas, ciudades, regiones, poblaciones, calles o sectores. "
+            "Las instituciones (hospitales, comisarias, tribunales) van en "
+            "'organizaciones', no aqui.\n\n"
+            "objetos: lista de objetos con claves 'tipo', 'nombre', "
+            "'cantidad' y 'unidad'. Solo elementos concretos vinculados al "
+            "hecho: armas, drogas, vehiculos, dinero o especies "
+            "incautadas. 'cantidad' debe ser numerica o null.\n\n"
+            "relaciones: lista de objetos con claves 'origen', 'tipo' y "
+            "'destino'.\n"
+            "  - 'origen' y 'destino' deben ser EXACTAMENTE uno de los "
+            "strings que ya escribiste en delitos, personas.nombre, "
+            "organizaciones, lugares u objetos.nombre de este mismo JSON. "
+            "Copialo caracter por caracter. Si un extremo no figura en esas "
+            "listas, omite esa relacion.\n"
+            f"  - 'tipo' debe ser exactamente uno de: {self.RELACIONES_PERMITIDAS}.\n"
+            "  - Cada relacion debe estar respaldada por una afirmacion "
+            "explicita del texto.\n\n"
+            "DATOS DE LA NOTICIA (usalos tal cual en el JSON)\n"
             f"id_noticia: {noticia.id_noticia}\n"
             f"fuente: {noticia.fuente}\n"
             f"url: {noticia.url}\n\n"

@@ -1,0 +1,80 @@
+{
+  "id_noticia": "N006",
+  "titulo": "Crimen en motel de Ovalle: huella en botella fue clave tras ser acribillado con 9 disparos",
+  "fecha_publicacion": "2026-05-02",
+  "fuente": "DiarioElDia",
+  "url": "https://www.diarioeldia.cl/noticias/2026/05/02/136200-crimen-en-motel-de-ovalle-huella-en-botella-fue-clave-tras-ser-acribillado-con-9-disparos",
+  "resumen": "La Fiscalía SAC-ECOH formalizó a un imputado por homicidio calificado con alevosía y porte de arma de fuego, tras el asesinato de una víctima que recibió nueve disparos al interior de una cabaña de un motel en Ovalle en noviembre de 2025. Una huella dactilar en una botella de alcohol encontrada en el sitio del suceso y testimonios permitieron vincular al imputado, quien quedó bajo la medida cautelar de prisión preventiva.",
+  "delitos": [
+    "homicidio calificado con alevosía",
+    "porte de arma de fuego"
+  ],
+  "personas": [
+    {
+      "nombre": "Eduardo Yáñez",
+      "rol": "fiscal"
+    },
+    {
+      "nombre": "imputado",
+      "rol": "imputado"
+    },
+    {
+      "nombre": "víctima",
+      "rol": "víctima"
+    }
+  ],
+  "organizaciones": [
+    "Fiscalía SAC-ECOH",
+    "Ministerio Público",
+    "Juzgado de Garantía de Ovalle",
+    "Policía de Investigaciones",
+    "tribunal"
+  ],
+  "lugares": [
+    "Ovalle",
+    "Llanos de la Chimba",
+    "cabaña de un motel"
+  ],
+  "objetos": [
+    {
+      "tipo": "recipiente",
+      "nombre": "botella de alcohol",
+      "cantidad": 1,
+      "unidad": "unidad"
+    },
+    {
+      "tipo": "arma",
+      "nombre": "armas de fuego",
+      "cantidad": null,
+      "unidad": null
+    },
+    {
+      "tipo": "proyectil",
+      "nombre": "impactos balísticos",
+      "cantidad": 9,
+      "unidad": "unidad"
+    }
+  ],
+  "relaciones": [
+    {
+      "origen": "Fiscalía SAC-ECOH",
+      "tipo": "formalizó a",
+      "destino": "imputado"
+    },
+    {
+      "origen": "Policía de Investigaciones",
+      "tipo": "ejecutó orden de aprehensión contra",
+      "destino": "imputado"
+    },
+    {
+      "origen": "imputado",
+      "tipo": "habría agredido a",
+      "destino": "víctima"
+    },
+    {
+      "origen": "tribunal",
+      "tipo": "decretó prisión preventiva para",
+      "destino": "imputado"
+    }
+  ]
+}

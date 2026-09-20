@@ -1,0 +1,68 @@
+{
+  "id_noticia": "N019",
+  "titulo": "PDI investiga homicidio y homicidio frustrado en La Serena",
+  "fecha_publicacion": "2026-09-06",
+  "fuente": "LaSerenaOnline",
+  "url": "https://laserenaonline.cl/2026/09/06/pdi-investiga-homicidio-y-homicidio-frustrado-en-la-serena/",
+  "resumen": "Detectives de la Brigada de Homicidios de la PDI, bajo la instrucción de la Fiscalía Macrozona Norte, investigan un homicidio con arma de fuego y un homicidio frustrado ocurridos en La Serena. Dos ciudadanos venezolanos de 34 y 32 años ingresaron al Servicio de Urgencias del Hospital de La Serena con heridas de bala; el mayor de ellos ingresó fallecido, mientras que el segundo resultó lesionado.",
+  "delitos": [
+    "homicidio",
+    "homicidio frustrado"
+  ],
+  "personas": [
+    {
+      "nombre": "Ciudadano venezolano de 34 años",
+      "rol": "Víctima de homicidio"
+    },
+    {
+      "nombre": "Ciudadano venezolano de 32 años",
+      "rol": "Víctima de homicidio frustrado"
+    }
+  ],
+  "organizaciones": [
+    "PDI",
+    "Brigada de Homicidios La Serena",
+    "Fiscalía Macrozona Norte",
+    "Hospital de La Serena",
+    "Laboratorio de Criminalística Regional"
+  ],
+  "lugares": [
+    "La Serena",
+    "Servicio de Urgencias del Hospital de La Serena"
+  ],
+  "objetos": [
+    {
+      "tipo": "arma",
+      "nombre": "arma de fuego",
+      "cantidad": null,
+      "unidad": null
+    }
+  ],
+  "relaciones": [
+    {
+      "origen": "Brigada de Homicidios La Serena",
+      "tipo": "investiga",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "Brigada de Homicidios La Serena",
+      "tipo": "investiga",
+      "destino": "homicidio frustrado"
+    },
+    {
+      "origen": "Fiscalía Macrozona Norte",
+      "tipo": "instruye a",
+      "destino": "Brigada de Homicidios La Serena"
+    },
+    {
+      "origen": "Ciudadano venezolano de 34 años",
+      "tipo": "ingresó fallecido a",
+      "destino": "Servicio de Urgencias del Hospital de La Serena"
+    },
+    {
+      "origen": "Ciudadano venezolano de 32 años",
+      "tipo": "ingresó lesionado a",
+      "destino": "Servicio de Urgencias del Hospital de La Serena"
+    }
+  ]
+}

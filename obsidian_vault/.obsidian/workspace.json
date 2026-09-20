@@ -155,7 +155,6 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Sin título.canvas",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -182,7 +181,7 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "1f16aa3619a16011",
+  "active": "2b6c35141c4f512e",
   "lastOpenFiles": [
     "Sin título.canvas",
     "Sin título.md",

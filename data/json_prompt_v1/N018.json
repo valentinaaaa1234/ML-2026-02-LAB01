@@ -1,0 +1,70 @@
+{
+  "id_noticia": "N018",
+  "titulo": "La Serena: Fiscalía y PDI investigan homicidio ocurrido en Caleta San Pedro",
+  "fecha_publicacion": "2026-09-08",
+  "fuente": "LaSerenaOnline",
+  "url": "https://laserenaonline.cl/2026/09/08/la-serena-fiscalia-y-pdi-investigan-homicidio-ocurrido-en-caleta-san-pedro/",
+  "resumen": "La Fiscalía, el equipo ECOH y la PDI investigan el homicidio de una persona en Caleta San Pedro, La Serena. Desconocidos llegaron en un vehículo, ingresaron al inmueble de la víctima para sustraer especies y le dispararon, provocándole la muerte posteriormente en el Hospital de La Serena.",
+  "delitos": [
+    "Homicidio",
+    "Robo"
+  ],
+  "personas": [
+    {
+      "nombre": "Freddy Salinas",
+      "rol": "Fiscal del equipo ECOH"
+    }
+  ],
+  "organizaciones": [
+    "Fiscalía",
+    "PDI",
+    "equipo ECOH",
+    "Hospital de La Serena",
+    "Laboratorio de Criminalística",
+    "Brigada de Homicidios de la Policía de Investigaciones de Chile"
+  ],
+  "lugares": [
+    "La Serena",
+    "Caleta San Pedro",
+    "Hospital de La Serena",
+    "inmueble de la víctima",
+    "inmueble contiguo"
+  ],
+  "objetos": [
+    {
+      "tipo": "vehículo",
+      "nombre": "vehículo",
+      "cantidad": 1,
+      "unidad": "unidad"
+    },
+    {
+      "tipo": "especies",
+      "nombre": "especies",
+      "cantidad": null,
+      "unidad": null
+    },
+    {
+      "tipo": "cámaras de seguridad",
+      "nombre": "cámaras de seguridad",
+      "cantidad": null,
+      "unidad": null
+    }
+  ],
+  "relaciones": [
+    {
+      "origen": "Freddy Salinas",
+      "tipo": "investiga",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "PDI",
+      "tipo": "investiga",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "Brigada de Homicidios de la Policía de Investigaciones de Chile",
+      "tipo": "realiza diligencias en",
+      "destino": "Caleta San Pedro"
+    }
+  ]
+}

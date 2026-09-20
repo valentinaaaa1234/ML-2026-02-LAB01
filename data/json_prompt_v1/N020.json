@@ -1,0 +1,58 @@
+{
+  "id_noticia": "N020",
+  "titulo": "PDI investiga homicidio con arma de fuego en Coquimbo",
+  "fecha_publicacion": "2026-08-28",
+  "fuente": "LaSerenaOnline",
+  "url": "https://laserenaonline.cl/2026/08/28/pdi-investiga-homicidio-con-arma-de-fuego-en-coquimbo/",
+  "resumen": "La Brigada de Homicidios La Serena y el Laboratorio de Criminalística Regional investigan el homicidio con arma de fuego de un hombre chileno de 32 años, ocurrido en un inmueble de la comuna de Coquimbo. Las diligencias comenzaron tras la solicitud de la Fiscalía ECOH Coquimbo.",
+  "delitos": [
+    "homicidio con arma de fuego"
+  ],
+  "personas": [
+    {
+      "nombre": "hombre chileno de 32 años",
+      "rol": "víctima"
+    }
+  ],
+  "organizaciones": [
+    "PDI",
+    "Brigada de Homicidios La Serena",
+    "Laboratorio de Criminalística Regional",
+    "Fiscalía ECOH Coquimbo",
+    "Ministerio Público"
+  ],
+  "lugares": [
+    "Coquimbo",
+    "comuna de Coquimbo"
+  ],
+  "objetos": [
+    {
+      "tipo": "arma",
+      "nombre": "arma de fuego",
+      "cantidad": null,
+      "unidad": null
+    }
+  ],
+  "relaciones": [
+    {
+      "origen": "Brigada de Homicidios La Serena",
+      "tipo": "investiga",
+      "destino": "homicidio con arma de fuego"
+    },
+    {
+      "origen": "homicidio con arma de fuego",
+      "tipo": "víctima",
+      "destino": "hombre chileno de 32 años"
+    },
+    {
+      "origen": "homicidio con arma de fuego",
+      "tipo": "ocurrió en",
+      "destino": "comuna de Coquimbo"
+    },
+    {
+      "origen": "Fiscalía ECOH Coquimbo",
+      "tipo": "solicitó intervención de",
+      "destino": "Brigada de Homicidios La Serena"
+    }
+  ]
+}

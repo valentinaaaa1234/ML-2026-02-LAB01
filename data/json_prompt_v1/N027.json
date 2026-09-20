@@ -1,0 +1,68 @@
+{
+  "id_noticia": "N027",
+  "titulo": "Investigan homicidio ocurrido en Coquimbo durante esta madrugada",
+  "fecha_publicacion": "2026-04-21",
+  "fuente": "LaSerenaOnline",
+  "url": "https://laserenaonline.cl/2026/04/21/investigan-homicidio-ocurrido-en-coquimbo-durante-esta-madrugada/",
+  "resumen": "Detectives de la Brigada de Homicidios La Serena y peritos del Laboratorio de Criminalística Regional investigan el homicidio de un joven de 26 años de nacionalidad chilena, identificado como Y.M.C.P., quien ingresó fallecido al SAR de Tierras Blancas en Coquimbo con lesiones por proyectiles balísticos. El hecho habría ocurrido en la vía pública en la calle Carlos Rozas.",
+  "delitos": [
+    "homicidio"
+  ],
+  "personas": [
+    {
+      "nombre": "Y.M.C.P.",
+      "rol": "víctima"
+    }
+  ],
+  "organizaciones": [
+    "Brigada de Homicidios La Serena",
+    "Laboratorio de Criminalística Regional"
+  ],
+  "lugares": [
+    "Coquimbo",
+    "SAR de Tierras Blancas",
+    "calle Carlos Rozas",
+    "vía pública"
+  ],
+  "objetos": [
+    {
+      "tipo": "arma",
+      "nombre": "arma de fuego",
+      "cantidad": null,
+      "unidad": null
+    },
+    {
+      "tipo": "munición",
+      "nombre": "proyectiles balísticos",
+      "cantidad": null,
+      "unidad": null
+    }
+  ],
+  "relaciones": [
+    {
+      "origen": "Brigada de Homicidios La Serena",
+      "tipo": "realiza diligencias por",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "Laboratorio de Criminalística Regional",
+      "tipo": "realiza diligencias por",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "Y.M.C.P.",
+      "tipo": "víctima de",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "homicidio",
+      "tipo": "ocurrido en",
+      "destino": "calle Carlos Rozas"
+    },
+    {
+      "origen": "homicidio",
+      "tipo": "ocurrido en",
+      "destino": "Coquimbo"
+    }
+  ]
+}

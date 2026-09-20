@@ -1,0 +1,67 @@
+{
+  "id_noticia": "N001",
+  "titulo": "Nuevo homicidio en La Serena: hombre muere acribillado en Caleta San Pedro",
+  "fecha_publicacion": "2026-09-08",
+  "fuente": "DiarioElDia",
+  "url": "https://www.diarioeldia.cl/noticias/2026/09/08/150326-nuevo-homicidio-en-la-serena-hombre-muere-acribillado-en-caleta-san-pedro",
+  "resumen": "Un hombre falleció en el Hospital de La Serena tras ser atacado con disparos en la Caleta San Pedro. De acuerdo con los antecedentes, un grupo de personas llegó en un vehículo, ingresó a un inmueble y sustrajo especies antes de balear a la víctima. La PDI y el equipo ECOH de la Fiscalía realizan diligencias para esclarecer el hecho.",
+  "delitos": [
+    "homicidio",
+    "robo de especies"
+  ],
+  "personas": [
+    {
+      "nombre": "Freddy Salinas",
+      "rol": "fiscal"
+    }
+  ],
+  "organizaciones": [
+    "PDI",
+    "equipo ECOH",
+    "Fiscalía",
+    "Brigada de Homicidios",
+    "Laboratorio de Criminalística",
+    "Hospital de La Serena"
+  ],
+  "lugares": [
+    "La Serena",
+    "Caleta San Pedro",
+    "Hospital de La Serena"
+  ],
+  "objetos": [
+    {
+      "tipo": "vehículo",
+      "nombre": "vehículo",
+      "cantidad": 1,
+      "unidad": "unidad"
+    },
+    {
+      "tipo": "especies",
+      "nombre": "especies",
+      "cantidad": null,
+      "unidad": null
+    }
+  ],
+  "relaciones": [
+    {
+      "origen": "Freddy Salinas",
+      "tipo": "fiscal de",
+      "destino": "equipo ECOH"
+    },
+    {
+      "origen": "Brigada de Homicidios de la PDI",
+      "tipo": "realiza diligencias por",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "Laboratorio de Criminalística",
+      "tipo": "realiza diligencias por",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "equipo ECOH",
+      "tipo": "realiza diligencias por",
+      "destino": "homicidio"
+    }
+  ]
+}

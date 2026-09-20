@@ -1,0 +1,62 @@
+{
+  "id_noticia": "N022",
+  "titulo": "Coquimbo: Fiscalía ECOH y PDI investigan homicidio en la Parte Alta",
+  "fecha_publicacion": "2026-08-22",
+  "fuente": "LaSerenaOnline",
+  "url": "https://laserenaonline.cl/2026/08/22/coquimbo-fiscalia-ecoh-y-pdi-investigan-homicidio-en-la-parte-alta/",
+  "resumen": "La Fiscalía ECOH y la PDI se encuentran investigando el homicidio de un hombre que ingresó fallecido al hospital de Coquimbo tras recibir impactos balísticos en la Parte Alta. Asimismo, se investiga de manera conjunta el ingreso de una mujer herida a bala proveniente del mismo sector.",
+  "delitos": [
+    "homicidio",
+    "lesiones por impacto balístico"
+  ],
+  "personas": [
+    {
+      "nombre": "Ricardo Soto",
+      "rol": "fiscal de alta complejidad y del equipo ECOH"
+    },
+    {
+      "nombre": "Víctima (hombre)",
+      "rol": "fallecido"
+    },
+    {
+      "nombre": "Víctima (mujer)",
+      "rol": "herida"
+    }
+  ],
+  "organizaciones": [
+    "Fiscalía ECOH",
+    "PDI",
+    "hospital de Coquimbo",
+    "Brigada de Homicidios",
+    "Fiscalía"
+  ],
+  "lugares": [
+    "Coquimbo",
+    "Parte Alta",
+    "hospital de Coquimbo",
+    "calle Las Heras"
+  ],
+  "objetos": [],
+  "relaciones": [
+    {
+      "origen": "Ricardo Soto",
+      "tipo": "pertenece a",
+      "destino": "Fiscalía ECOH"
+    },
+    {
+      "origen": "Brigada de Homicidios",
+      "tipo": "investiga",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "Víctima (hombre)",
+      "tipo": "falleció en",
+      "destino": "hospital de Coquimbo"
+    },
+    {
+      "origen": "Víctima (mujer)",
+      "tipo": "ingresó herida a",
+      "destino": "hospital de Coquimbo"
+    }
+  ]
+}

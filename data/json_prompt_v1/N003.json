@@ -1,0 +1,119 @@
+{
+  "id_noticia": "N003",
+  "titulo": "Tres asesinatos en menos de dos días elevan a 24 las víctimas en la región",
+  "fecha_publicacion": "2026-08-22",
+  "fuente": "DiarioElDia",
+  "url": "https://www.diarioeldia.cl/noticias/2026/08/22/148498-tres-asesinatos-en-menos-de-dos-dias-elevan-a-24-las-victimas-en-la-region",
+  "resumen": "Tres investigaciones por homicidio se desarrollan en la Región de Coquimbo tras una serie de hechos de violencia en Coquimbo y Salamanca, sumando 24 homicidios en lo que va del año 2026. En Salamanca, un hombre de 85 años fue hallado muerto en su domicilio, caso por el cual se detuvo a una mujer de 56 años. En Coquimbo, un hombre de 37 años falleció tras recibir impactos de bala en el sector de Las Heras, donde también resultó herida una mujer de 86 años por un proyectil. Finalmente, un hombre de 35 años fue asesinado con arma de fuego en el sector de Punta Mira.",
+  "delitos": [
+    "Homicidio",
+    "Lesiones"
+  ],
+  "personas": [
+    {
+      "nombre": "Adulto mayor de 85 años",
+      "rol": "Víctima"
+    },
+    {
+      "nombre": "Mujer de 56 años",
+      "rol": "Imputada"
+    },
+    {
+      "nombre": "Freddy Montoya",
+      "rol": "Subprefecto de la Brigada de Homicidios"
+    },
+    {
+      "nombre": "Ricardo Soto",
+      "rol": "Fiscal de Alta Complejidad y del equipo ECOH"
+    },
+    {
+      "nombre": "Hombre de aproximadamente 37 años",
+      "rol": "Víctima"
+    },
+    {
+      "nombre": "Mujer de 86 años",
+      "rol": "Víctima"
+    },
+    {
+      "nombre": "Hombre chileno de 35 años",
+      "rol": "Víctima"
+    }
+  ],
+  "organizaciones": [
+    "Brigada de Homicidios La Serena",
+    "Policía de Investigaciones",
+    "Ministerio Público",
+    "Prefectura del Choapa",
+    "Juzgado de Garantía de Illapel",
+    "Diario El Día",
+    "Fiscalía ECOH Coquimbo",
+    "Hospital San Pablo",
+    "Laboratorio de Criminalística Regional La Serena"
+  ],
+  "lugares": [
+    "Coquimbo",
+    "Salamanca",
+    "Región de Coquimbo",
+    "Las Heras, Parte Alta de Coquimbo",
+    "Punta Mira, Coquimbo",
+    "Illapel"
+  ],
+  "objetos": [
+    {
+      "tipo": "dispositivo electrónico",
+      "nombre": "teléfonos celulares",
+      "cantidad": null,
+      "unidad": null
+    },
+    {
+      "tipo": "arma",
+      "nombre": "elemento contundente",
+      "cantidad": null,
+      "unidad": null
+    },
+    {
+      "tipo": "arma",
+      "nombre": "arma de fuego",
+      "cantidad": null,
+      "unidad": null
+    },
+    {
+      "tipo": "munición",
+      "nombre": "proyectil",
+      "cantidad": null,
+      "unidad": null
+    }
+  ],
+  "relaciones": [
+    {
+      "origen": "Mujer de 56 años",
+      "tipo": "confesó participación en homicidio de",
+      "destino": "Adulto mayor de 85 años"
+    },
+    {
+      "origen": "Prefectura del Choapa",
+      "tipo": "concretó detención de",
+      "destino": "Mujer de 56 años"
+    },
+    {
+      "origen": "Brigada de Homicidios La Serena",
+      "tipo": "investiga homicidio de",
+      "destino": "Adulto mayor de 85 años"
+    },
+    {
+      "origen": "Brigada de Homicidios La Serena",
+      "tipo": "investiga homicidio de",
+      "destino": "Hombre de aproximadamente 37 años"
+    },
+    {
+      "origen": "Brigada de Homicidios La Serena",
+      "tipo": "investiga homicidio de",
+      "destino": "Hombre chileno de 35 años"
+    },
+    {
+      "origen": "Ricardo Soto",
+      "tipo": "fiscal de",
+      "destino": "Fiscalía ECOH Coquimbo"
+    }
+  ]
+}

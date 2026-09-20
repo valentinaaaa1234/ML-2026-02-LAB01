@@ -1,0 +1,83 @@
+{
+  "id_noticia": "N008",
+  "titulo": "Las señales del preocupante repunte de homicidios en la región",
+  "fecha_publicacion": "2026-09-13",
+  "fuente": "DiarioElDia",
+  "url": "https://www.diarioeldia.cl/noticias/2026/09/13/150949-las-senales-del-preocupante-repunte-de-homicidios-en-la-region",
+  "resumen": "La Región de Coquimbo registra un aumento del 42,1% en homicidios consumados durante el primer semestre de 2026, contrastando con la tendencia a la baja a nivel nacional. Autoridades y expertos analizan las causas, destacando el incremento del uso de armas de fuego y la vinculación a delitos o grupos organizados, mientras el Gobierno anuncia el reforzamiento de planes de seguridad en la zona.",
+  "delitos": [
+    "homicidio consumado",
+    "narcocultivo",
+    "microtráfico de drogas"
+  ],
+  "personas": [
+    {
+      "nombre": "María José Duarte",
+      "rol": "seremi de Seguridad Pública de Coquimbo"
+    },
+    {
+      "nombre": "Adrián Vega",
+      "rol": "abogado y exfiscal regional"
+    },
+    {
+      "nombre": "Jorge Tobar",
+      "rol": "general (r) de Carabineros y experto en criminología"
+    },
+    {
+      "nombre": "Anne Gray",
+      "rol": "mencionada en caso judicial"
+    }
+  ],
+  "organizaciones": [
+    "Gobierno",
+    "Carabineros",
+    "PDI",
+    "Ministerio Público"
+  ],
+  "lugares": [
+    "Chile",
+    "Región de Coquimbo",
+    "Antofagasta",
+    "Arica y Parinacota",
+    "La Serena",
+    "Coquimbo",
+    "Ovalle",
+    "Provincia de Limarí",
+    "Provincia de Choapa",
+    "Vicuña",
+    "La Pampilla",
+    "Terminal de La Serena",
+    "Ruta 5 Norte"
+  ],
+  "objetos": [
+    {
+      "tipo": "arma",
+      "nombre": "arma de fuego",
+      "cantidad": null,
+      "unidad": null
+    },
+    {
+      "tipo": "droga",
+      "nombre": "cocaína",
+      "cantidad": null,
+      "unidad": null
+    }
+  ],
+  "relaciones": [
+    {
+      "origen": "María José Duarte",
+      "tipo": "seremi de",
+      "destino": "Seguridad Pública de Coquimbo"
+    },
+    {
+      "origen": "Adrián Vega",
+      "tipo": "exfiscal regional de",
+      "destino": "Región de Coquimbo"
+    },
+    {
+      "origen": "Jorge Tobar",
+      "tipo": "general (r) de",
+      "destino": "Carabineros"
+    }
+  ]
+}

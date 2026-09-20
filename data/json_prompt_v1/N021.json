@@ -1,0 +1,78 @@
+{
+  "id_noticia": "N021",
+  "titulo": "Investigan homicidio con arma de fuego al interior de un domicilio en Coquimbo",
+  "fecha_publicacion": "2026-08-23",
+  "fuente": "LaSerenaOnline",
+  "url": "https://laserenaonline.cl/2026/08/23/investigan-homicidio-con-arma-de-fuego-al-interior-de-un-domicilio-en-coquimbo/",
+  "resumen": "Detectives de la Brigada de Homicidios La Serena investigan el homicidio de un hombre chileno de 35 años, quien falleció tras recibir impactos balísticos al interior de un domicilio en el sector de Punta Mira, comuna de Coquimbo. Los autores del hecho se habrían movilizado en un vehículo.",
+  "delitos": [
+    "Homicidio con arma de fuego"
+  ],
+  "personas": [
+    {
+      "nombre": "Hombre chileno de 35 años",
+      "rol": "Víctima"
+    },
+    {
+      "nombre": "Soto",
+      "rol": "Fiscal"
+    },
+    {
+      "nombre": "Sujetos imputados",
+      "rol": "Sospechoso"
+    }
+  ],
+  "organizaciones": [
+    "Brigada de Homicidios La Serena",
+    "Fiscalía ECOH Coquimbo",
+    "Laboratorio de Criminalística Regional La Serena",
+    "Servicio Médico Legal",
+    "PDI"
+  ],
+  "lugares": [
+    "Coquimbo",
+    "Punta Mira",
+    "La Serena"
+  ],
+  "objetos": [
+    {
+      "tipo": "Arma",
+      "nombre": "Arma de fuego",
+      "cantidad": null,
+      "unidad": null
+    },
+    {
+      "tipo": "Vehículo",
+      "nombre": "Vehículo",
+      "cantidad": null,
+      "unidad": null
+    }
+  ],
+  "relaciones": [
+    {
+      "origen": "Brigada de Homicidios La Serena",
+      "tipo": "investiga el homicidio de",
+      "destino": "Hombre chileno de 35 años"
+    },
+    {
+      "origen": "Fiscalía ECOH Coquimbo",
+      "tipo": "instruye a",
+      "destino": "Brigada de Homicidios La Serena"
+    },
+    {
+      "origen": "Soto",
+      "tipo": "fiscal de",
+      "destino": "Fiscalía ECOH Coquimbo"
+    },
+    {
+      "origen": "Sujetos imputados",
+      "tipo": "dispararon contra",
+      "destino": "Hombre chileno de 35 años"
+    },
+    {
+      "origen": "Sujetos imputados",
+      "tipo": "se movilizaban en",
+      "destino": "Vehículo"
+    }
+  ]
+}

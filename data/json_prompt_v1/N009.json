@@ -1,0 +1,65 @@
+{
+  "id_noticia": "N009",
+  "titulo": "Segundo homicidio del año en la región se registra en Ovalle",
+  "fecha_publicacion": "2025-01-25",
+  "fuente": "DiarioElDia",
+  "url": "https://www.diarioeldia.cl/noticias/2025/01/25/124707-segundo-homicidio-del-ano-en-la-region-se-registra-en-ovalle",
+  "resumen": "Un hombre de 29 años falleció en el Hospital Provincial de Ovalle tras ingresar con una herida de bala de gravedad. El hecho habría ocurrido en la ruta D-579, en la comuna de Ovalle, el pasado jueves 23 de enero de 2025. Personal de la Fiscalía ECOH, la Brigada de Homicidios de la PDI y el Laboratorio de Criminalística realizan diligencias para esclarecer las circunstancias del suceso.",
+  "delitos": [
+    "Homicidio"
+  ],
+  "personas": [
+    {
+      "nombre": "Hombre de 29 años",
+      "rol": "Víctima"
+    }
+  ],
+  "organizaciones": [
+    "Hospital Provincial de Ovalle",
+    "Fiscalía ECOH",
+    "Brigada de Homicidios de la PDI",
+    "Carabineros",
+    "Laboratorio de Criminalística",
+    "Ministerio Público",
+    "PDI"
+  ],
+  "lugares": [
+    "Ovalle",
+    "Hospital Provincial de Ovalle",
+    "ruta D-579",
+    "Región de Coquimbo",
+    "Coquimbo",
+    "calle Juan Antonio Ríos",
+    "La Serena"
+  ],
+  "objetos": [
+    {
+      "tipo": "Proyectil",
+      "nombre": "Proyectil balístico",
+      "cantidad": 1,
+      "unidad": "unidad"
+    }
+  ],
+  "relaciones": [
+    {
+      "origen": "Carabineros",
+      "tipo": "trasladó a",
+      "destino": "Hombre de 29 años"
+    },
+    {
+      "origen": "Hombre de 29 años",
+      "tipo": "falleció en",
+      "destino": "Hospital Provincial de Ovalle"
+    },
+    {
+      "origen": "Brigada de Homicidios de la PDI",
+      "tipo": "investiga",
+      "destino": "Hombre de 29 años"
+    },
+    {
+      "origen": "Fiscalía ECOH",
+      "tipo": "investiga",
+      "destino": "Hombre de 29 años"
+    }
+  ]
+}

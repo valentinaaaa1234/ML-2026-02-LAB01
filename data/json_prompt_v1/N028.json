@@ -1,0 +1,84 @@
+{
+  "id_noticia": "N028",
+  "titulo": "La Serena: Sujeto involucrado en homicidio pasará a control de detención",
+  "fecha_publicacion": "2026-04-17",
+  "fuente": "LaSerenaOnline",
+  "url": "https://laserenaonline.cl/2026/04/17/la-serena-sujeto-involucrado-en-homicidio-pasara-a-control-de-detencion/",
+  "resumen": "La Fiscalía, el equipo ECOH y la Brigada de Homicidios de la PDI investigan el homicidio de un hombre de nacionalidad chilena y mayor de edad, quien falleció tras una riña con un arma cortante en La Serena. Un sujeto fue detenido por Carabineros y pasará a control de detención en el Juzgado de Garantía de La Serena.",
+  "delitos": [
+    "Homicidio"
+  ],
+  "personas": [
+    {
+      "nombre": "Sujeto de sexo masculino, chileno, mayor de edad",
+      "rol": "Víctima"
+    },
+    {
+      "nombre": "Sujeto detenido",
+      "rol": "Detenido"
+    },
+    {
+      "nombre": "Freddy Salinas",
+      "rol": "Informante"
+    }
+  ],
+  "organizaciones": [
+    "Fiscalía",
+    "equipo ECOH",
+    "Brigada de Homicidios de la PDI",
+    "Laboratorio de Criminalística de la PDI",
+    "Carabineros",
+    "Juzgado de Garantía de La Serena"
+  ],
+  "lugares": [
+    "La Serena",
+    "calle Brasil con Rengifo",
+    "La Recova"
+  ],
+  "objetos": [
+    {
+      "tipo": "arma",
+      "nombre": "arma cortante",
+      "cantidad": 1,
+      "unidad": "unidad"
+    },
+    {
+      "tipo": "dispositivo de seguridad",
+      "nombre": "cámaras",
+      "cantidad": null,
+      "unidad": null
+    }
+  ],
+  "relaciones": [
+    {
+      "origen": "Carabineros",
+      "tipo": "detuvo a",
+      "destino": "Sujeto detenido"
+    },
+    {
+      "origen": "Sujeto detenido",
+      "tipo": "involucrado en",
+      "destino": "Homicidio"
+    },
+    {
+      "origen": "Sujeto de sexo masculino, chileno, mayor de edad",
+      "tipo": "víctima de",
+      "destino": "Homicidio"
+    },
+    {
+      "origen": "Fiscalía",
+      "tipo": "investiga",
+      "destino": "Homicidio"
+    },
+    {
+      "origen": "equipo ECOH",
+      "tipo": "investiga",
+      "destino": "Homicidio"
+    },
+    {
+      "origen": "Brigada de Homicidios de la PDI",
+      "tipo": "investiga",
+      "destino": "Homicidio"
+    }
+  ]
+}

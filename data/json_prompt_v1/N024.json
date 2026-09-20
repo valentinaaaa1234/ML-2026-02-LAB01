@@ -1,0 +1,79 @@
+{
+  "id_noticia": "N024",
+  "titulo": "Los Vilos: Conductor buscado por homicidio llevaba drogas y quedó en prisión preventiva",
+  "fecha_publicacion": "2026-08-07",
+  "fuente": "LaSerenaOnline",
+  "url": "https://laserenaonline.cl/2026/08/07/los-vilos-conductor-buscado-por-homicidio-llevaba-drogas-y-quedo-en-prision-preventiva/",
+  "resumen": "Un conductor que mantenía una orden de detención vigente por homicidio en la región del Maule fue detenido por Carabineros en Los Vilos tras intentar fugarse. El imputado transportaba más de 18 kilos de marihuana en un vehículo con encargo por robo y patente falsa. El Juzgado de Garantía decretó su prisión preventiva.",
+  "delitos": [
+    "homicidio",
+    "tráfico de drogas",
+    "receptación de vehículos",
+    "conducción con placa patente falsa"
+  ],
+  "personas": [
+    {
+      "nombre": "Álvaro Rosas",
+      "rol": "Fiscal (s) de la fiscalía local de Los Vilos"
+    },
+    {
+      "nombre": "Individuo",
+      "rol": "Imputado"
+    }
+  ],
+  "organizaciones": [
+    "Carabineros",
+    "Fiscalía",
+    "Juzgado de Garantía",
+    "Fiscalía Local de Los Vilos"
+  ],
+  "lugares": [
+    "Los Vilos",
+    "ruta 5 norte",
+    "km 282",
+    "Illapel",
+    "región del Maule"
+  ],
+  "objetos": [
+    {
+      "tipo": "droga",
+      "nombre": "marihuana",
+      "cantidad": 18.895,
+      "unidad": "kilos"
+    },
+    {
+      "tipo": "vehículo",
+      "nombre": "automóvil",
+      "cantidad": 1,
+      "unidad": "unidad"
+    },
+    {
+      "tipo": "placa patente",
+      "nombre": "placa patente de fabricación artesanal",
+      "cantidad": 1,
+      "unidad": "unidad"
+    }
+  ],
+  "relaciones": [
+    {
+      "origen": "Carabineros",
+      "tipo": "detuvo a",
+      "destino": "Individuo"
+    },
+    {
+      "origen": "Álvaro Rosas",
+      "tipo": "formalizó a",
+      "destino": "Individuo"
+    },
+    {
+      "origen": "Juzgado de Garantía",
+      "tipo": "ordenó prisión preventiva para",
+      "destino": "Individuo"
+    },
+    {
+      "origen": "Individuo",
+      "tipo": "transportaba",
+      "destino": "marihuana"
+    }
+  ]
+}

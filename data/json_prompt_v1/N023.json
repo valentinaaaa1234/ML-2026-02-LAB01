@@ -1,0 +1,47 @@
+{
+  "id_noticia": "N023",
+  "titulo": "Investigan homicidio de adulto mayor ocurrido en Salamanca",
+  "fecha_publicacion": "2026-08-21",
+  "fuente": "LaSerenaOnline",
+  "url": "https://laserenaonline.cl/2026/08/21/investigan-homicidio-de-adulto-mayor-ocurrido-en-salamanca/",
+  "resumen": "Detectives de la Brigada de Homicidios La Serena investigan el homicidio de un hombre de 84 años, ocurrido en la comuna de Salamanca, quien fue encontrado sin vida en su domicilio por familiares. El fallecimiento es atribuible a la acción de terceras personas.",
+  "delitos": [
+    "Homicidio"
+  ],
+  "personas": [
+    {
+      "nombre": "Hombre de 84 años",
+      "rol": "Víctima"
+    },
+    {
+      "nombre": "Familiares",
+      "rol": "Testigos"
+    }
+  ],
+  "organizaciones": [
+    "Brigada de Homicidios La Serena",
+    "Fiscalía Macrozona Norte"
+  ],
+  "lugares": [
+    "Salamanca",
+    "La Serena"
+  ],
+  "objetos": [],
+  "relaciones": [
+    {
+      "origen": "Brigada de Homicidios La Serena",
+      "tipo": "investiga el homicidio de",
+      "destino": "Hombre de 84 años"
+    },
+    {
+      "origen": "Fiscalía Macrozona Norte",
+      "tipo": "instruye a",
+      "destino": "Brigada de Homicidios La Serena"
+    },
+    {
+      "origen": "Familiares",
+      "tipo": "encuentran a",
+      "destino": "Hombre de 84 años"
+    }
+  ]
+}
