@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "866295b28c553d83",
+        "id": "2a0e13dc44bd970e",
         "type": "tabs",
         "children": [
           {
-            "id": "faa4958fb6cdfba1",
+            "id": "5dfb6297ed67747c",
             "type": "leaf",
             "state": {
-              "type": "empty",
+              "type": "graph",
               "state": {},
-              "icon": "lucide-file",
-              "title": "Nueva pestaña"
+              "icon": "lucide-git-fork",
+              "title": "Vista gráfica"
             }
           }
         ]
@@ -180,14 +180,14 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "1f16aa3619a16011",
+  "active": "5dfb6297ed67747c",
   "lastOpenFiles": [
     "Sin título.base",
+    "Sin título.md",
     "grafooo/Bienvenido.md",
     "grafooo",
     "Sin título.canvas",
     "Delitos/amenazas.md",
-    "Sin título.md",
     "Sin nombre 3",
     "Sin nombre 2",
     "Sin nombre 1",
