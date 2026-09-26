@@ -1,0 +1,61 @@
+{
+  "id_noticia": "N036",
+  "titulo": "Hombre es asesinado con arma cortante al interior de terminal de buses de Coquimbo: PDI busca al autor",
+  "fecha_publicacion": "2026-07-17",
+  "fuente": "BioBioChile",
+  "url": "https://www.biobiochile.cl/noticias/nacional/region-de-coquimbo/2026/07/17/hombre-es-asesinado-con-arma-cortante-al-interior-de-terminal-de-buses-de-coquimbo-pdi-busca-al-autor.shtml",
+  "resumen": "La PDI investiga un homicidio en el Terminal de Buses de Coquimbo, donde un hombre de 42 años murió apuñalado tras una discusión. La Brigada de Homicidios de La Serena y peritos del Lacrim realizan diligencias para identificar al agresor, quien huyó tras el ataque. El examen forense confirma las heridas por arma cortante, y la policía busca al responsable prófugo.",
+  "delitos": [
+    "homicidio"
+  ],
+  "personas": [
+    {
+      "nombre": null,
+      "rol": "victima"
+    },
+    {
+      "nombre": null,
+      "rol": "profugo"
+    }
+  ],
+  "organizaciones": [
+    "Policía de Investigaciones",
+    "Brigada de Homicidios de La Serena",
+    "Laboratorio de Criminalística Regional",
+    "Ministerio Público"
+  ],
+  "lugares": [
+    "Coquimbo",
+    "La Serena"
+  ],
+  "objetos": [
+    {
+      "tipo": "arma",
+      "nombre": "arma cortante",
+      "cantidad": null,
+      "unidad": null
+    }
+  ],
+  "relaciones": [
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "Coquimbo"
+    },
+    {
+      "origen": "Policía de Investigaciones",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "Brigada de Homicidios de La Serena",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "Ministerio Público",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    }
+  ]
+}

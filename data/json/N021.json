@@ -1,0 +1,73 @@
+{
+  "id_noticia": "N021",
+  "titulo": "Investigan homicidio con arma de fuego al interior de un domicilio en Coquimbo",
+  "fecha_publicacion": "2026-08-23",
+  "fuente": "LaSerenaOnline",
+  "url": "https://laserenaonline.cl/2026/08/23/investigan-homicidio-con-arma-de-fuego-al-interior-de-un-domicilio-en-coquimbo/",
+  "resumen": "La Brigada de Homicidios de la PDI y la Fiscalía ECOH investigan el homicidio de un hombre de 35 años, quien falleció tras recibir disparos al interior de un domicilio en el sector de Punta Mira, comuna de Coquimbo.",
+  "delitos": [
+    "homicidio"
+  ],
+  "personas": [
+    {
+      "nombre": null,
+      "rol": "victima"
+    },
+    {
+      "nombre": null,
+      "rol": "imputado"
+    }
+  ],
+  "organizaciones": [
+    "Brigada de Homicidios La Serena",
+    "Fiscalía ECOH Coquimbo",
+    "Laboratorio de Criminalística Regional La Serena",
+    "Servicio Médico Legal",
+    "PDI"
+  ],
+  "lugares": [
+    "Coquimbo",
+    "Punta Mira"
+  ],
+  "objetos": [
+    {
+      "tipo": "arma",
+      "nombre": "arma de fuego",
+      "cantidad": null,
+      "unidad": null
+    },
+    {
+      "tipo": "vehiculo",
+      "nombre": "vehículo",
+      "cantidad": null,
+      "unidad": null
+    }
+  ],
+  "relaciones": [
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "Coquimbo"
+    },
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "Punta Mira"
+    },
+    {
+      "origen": "Brigada de Homicidios La Serena",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "Fiscalía ECOH Coquimbo",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "PDI",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    }
+  ]
+}

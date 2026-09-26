@@ -6,9 +6,10 @@ Uso (con el entorno conda activado):
     python main.py descubrir   # Google News RSS → data/urls.csv
     python main.py capturar    # URLs → data/raw + data/processed
     python main.py extraer     # Gemini → data/json (requiere GEMINI_API_KEY)
-    python main.py obsidian    # TODO(alumno) vault Markdown
-    python main.py analizar    # TODO(alumno) Data Understanding
-    python main.py pipeline    # descubrir + capturar + extraer; avisa pendientes
+    python main.py validar     # Revalida data/json sin llamar a Gemini
+    python main.py obsidian    # JSON → vault Markdown enlazado
+    python main.py analizar    # Data Understanding (estadísticas + figuras)
+    python main.py pipeline    # todas las etapas en orden
 """
 
 from __future__ import annotations
@@ -29,7 +30,15 @@ def construir_parser() -> argparse.ArgumentParser:
     )
     parser.add_argument(
         "etapa",
-        choices=["descubrir", "capturar", "extraer", "obsidian", "analizar", "pipeline"],
+        choices=[
+            "descubrir",
+            "capturar",
+            "extraer",
+            "validar",
+            "obsidian",
+            "analizar",
+            "pipeline",
+        ],
         help="Etapa del laboratorio a ejecutar.",
     )
     return parser
@@ -42,6 +51,7 @@ def main(argv: list[str] | None = None) -> int:
         "descubrir": pipeline.ejecutar_descubrimiento,
         "capturar": pipeline.ejecutar_captura,
         "extraer": pipeline.ejecutar_extraccion,
+        "validar": pipeline.ejecutar_validacion,
         "obsidian": pipeline.ejecutar_obsidian,
         "analizar": pipeline.ejecutar_analisis,
         "pipeline": pipeline.ejecutar_pipeline,

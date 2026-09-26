@@ -1,0 +1,248 @@
+# Índice de la bóveda
+
+Noticias procesadas: 39
+Delitos distintos: 11
+Personas distintos: 9
+Organizaciones distintos: 73
+Lugares distintos: 58
+Objetos distintos: 38
+
+## Noticias
+- [[n001]] — Nuevo homicidio en La Serena: hombre muere acribillado en Caleta San Pedro
+- [[n002]] — Violencia no da tregua: Acribillamiento en Coquimbo eleva preocupación por seguidilla de asesinatos
+- [[n003]] — Tres asesinatos en menos de dos días elevan a 24 las víctimas en la región
+- [[n004]] — Dos homicidios impactan a Coquimbo y Salamanca
+- [[n005]] — Tras casi un año prófugo: cae adolescente imputado por homicidio en Coquimbo
+- [[n006]] — Crimen en motel de Ovalle: huella en botella fue clave tras ser acribillado con 9 disparos
+- [[n007]] — Homicidio a plena luz del día en La Serena: autor fue detenido
+- [[n008]] — Las señales del preocupante repunte de homicidios en la región
+- [[n009]] — Segundo homicidio del año en la región se registra en Ovalle
+- [[n018]] — La Serena: Fiscalía y PDI investigan homicidio ocurrido en Caleta San Pedro
+- [[n019]] — PDI investiga homicidio y homicidio frustrado en La Serena
+- [[n020]] — PDI investiga homicidio con arma de fuego en Coquimbo
+- [[n021]] — Investigan homicidio con arma de fuego al interior de un domicilio en Coquimbo
+- [[n022]] — Coquimbo: Fiscalía ECOH y PDI investigan homicidio en la Parte Alta
+- [[n023]] — Investigan homicidio de adulto mayor ocurrido en Salamanca
+- [[n024]] — Los Vilos: Conductor buscado por homicidio llevaba drogas y quedó en prisión preventiva
+- [[n025]] — Carabineros OS7 detiene en Los Vilos a sujeto con orden vigente por homicidio y más de 18 kilos de marihuana
+- [[n026]] — Investigan homicidio al interior del Terminal de Buses de Coquimbo
+- [[n027]] — Investigan homicidio ocurrido en Coquimbo durante esta madrugada
+- [[n028]] — La Serena: Sujeto involucrado en homicidio pasará a control de detención
+- [[n029]] — Investigan homicidio tras riña en Coquimbo
+- [[n030]] — Investigan homicidio ocurrido en La Serena
+- [[n031]] — Crimen en motel de Ovalle: huella en botella fue clave tras ser acribillado con 9 disparos
+- [[n032]] — Detienen en La Serena a dos implicados más en crimen en motel ovallino
+- [[n033]] — Doble homicidio en Sotaquí: hallan a dos hombres baleados en un fundo
+- [[n034]] — Doble homicidio en Sotaquí desata temor vecinal por ola de robos
+- [[n035]] — Prisión preventiva para sujeto que apuñaló a tres personas en Ovalle
+- [[n036]] — Hombre es asesinado con arma cortante al interior de terminal de buses de Coquimbo: PDI busca al autor
+- [[n037]] — Detienen a presunto autor del asesinato de hombre al interior de terminal de buses en Coquimbo
+- [[n038]] — Prisión preventiva a hombre acusado de homicidio consumado y frustrado tras riña vecinal en La Serena
+- [[n039]] — Riña termina con hombre asesinado a bala en sector Tierras Blancas de Coquimbo: un detenido
+- [[n040]] — Detienen a hombre tras homicidio en plena vía pública de La Serena: víctima tenía 27 años
+- [[n041]] — Municipalidad de La Serena pide cerrar conocido pub del casco histórico tras homicidio
+- [[n042]] — Detienen a tres colombianos acusados de homicidio en un local nocturno en el centro de La Serena
+- [[n043]] — Condenan a ciudadano venezolano por el homicidio del médico Nicolás Pinochet en La Serena
+- [[n044]] — Tribunal acredita femicidio en asesinato de joven de 17 años en Ovalle: su pareja le disparó
+- [[n045]] — Carabineros detuvo a mujer por homicidio frustrado en pleno centro de La Serena
+- [[n046]] — Seremi de Seguridad María José Duarte tras homicidio en Coquimbo: «Son hechos graves y no los vamos a relativizar»
+- [[n047]] — Tripulante boliviano apareció muerto dentro de una lancha
+
+## Delitos
+- [[homicidio]] (35 noticias)
+- [[homicidio_frustrado]] (4 noticias)
+- [[porte_ilegal_de_armas]] (4 noticias)
+- [[receptacion]] (4 noticias)
+- [[robo]] (4 noticias)
+- [[lesiones]] (3 noticias)
+- [[microtrafico]] (3 noticias)
+- [[trafico_de_drogas]] (2 noticias)
+- [[amenazas]] (1 noticia)
+- [[femicidio]] (1 noticia)
+- [[otro]] (1 noticia)
+
+## Personas
+- [[anne_gray]] (1 noticia)
+- [[c_t_a_l]] (1 noticia)
+- [[e_c_r_a]] (1 noticia)
+- [[l_m_p]] (1 noticia)
+- [[m_a_s_c]] (1 noticia)
+- [[nicolas_pinochet_garcia]] (1 noticia)
+- [[paulina_caceres_espinoza]] (1 noticia)
+- [[r_a_v_m]] (1 noticia)
+- [[y_m_c_p]] (1 noticia)
+
+## Organizaciones
+- [[ministerio_publico]] (17 noticias)
+- [[pdi]] (17 noticias)
+- [[carabineros]] (12 noticias)
+- [[fiscalia]] (10 noticias)
+- [[brigada_de_homicidios_la_serena]] (8 noticias)
+- [[policia_de_investigaciones]] (8 noticias)
+- [[laboratorio_de_criminalistica_regional]] (6 noticias)
+- [[brigada_de_homicidios]] (5 noticias)
+- [[brigada_de_homicidios_de_la_serena]] (5 noticias)
+- [[equipo_ecoh]] (4 noticias)
+- [[fiscalia_ecoh_coquimbo]] (4 noticias)
+- [[hospital_de_la_serena]] (4 noticias)
+- [[hospital_de_coquimbo]] (3 noticias)
+- [[juzgado_de_garantia_de_coquimbo]] (3 noticias)
+- [[laboratorio_de_criminalistica_regional_la_serena]] (3 noticias)
+- [[sar_de_tierras_blancas]] (3 noticias)
+- [[equipo_de_crimen_organizado_y_homicidios_ecoh]] (2 noticias)
+- [[fiscalia_ecoh]] (2 noticias)
+- [[fiscalia_macrozona_norte]] (2 noticias)
+- [[fiscalia_sac_ecoh]] (2 noticias)
+- [[gobierno]] (2 noticias)
+- [[hospital_provincial_de_ovalle]] (2 noticias)
+- [[juzgado_de_garantia_de_la_serena]] (2 noticias)
+- [[juzgado_de_garantia_de_ovalle]] (2 noticias)
+- [[labocar]] (2 noticias)
+- [[laboratorio_de_criminalistica]] (2 noticias)
+- [[laboratorio_de_criminalistica_regional_de_coquimbo]] (2 noticias)
+- [[os9]] (2 noticias)
+- [[servicio_medico_legal]] (2 noticias)
+- [[1a_comisaria_de_la_serena]] (1 noticia)
+- [[bicrim_coquimbo]] (1 noticia)
+- [[biro_la_serena]] (1 noticia)
+- [[brigada_de_homicidios_de_la_pdi]] (1 noticia)
+- [[capitania_de_puerto]] (1 noticia)
+- [[carabineros_os7]] (1 noticia)
+- [[colegio_santa_maria_eufrasia_de_ovalle]] (1 noticia)
+- [[corte_de_apelaciones]] (1 noticia)
+- [[delegacion]] (1 noticia)
+- [[delegacion_presidencial_del_limari]] (1 noticia)
+- [[delegacion_presidencial_regional]] (1 noticia)
+- [[diario_el_dia]] (1 noticia)
+- [[el_bacano]] (1 noticia)
+- [[equipo_contra_el_crimen_organizado_y_homicidios_ecoh]] (1 noticia)
+- [[fiscalia_de_equipos_de_crimen_organizado_y_homicidios_ecoh_de_coquimbo]] (1 noticia)
+- [[fiscalia_eco]] (1 noticia)
+- [[fiscalia_local_de_los_vilos]] (1 noticia)
+- [[fiscalia_regional_de_coquimbo]] (1 noticia)
+- [[gobernacion_maritima_de_coquimbo]] (1 noticia)
+- [[hospital_san_pablo]] (1 noticia)
+- [[hospital_san_pablo_de_coquimbo]] (1 noticia)
+- [[junta_de_vecinos]] (1 noticia)
+- [[juzgado_de_garantia]] (1 noticia)
+- [[juzgado_de_garantia_de_illapel]] (1 noticia)
+- [[labocar_de_carabineros_de_coquimbo]] (1 noticia)
+- [[laboratorio_criminalistico_regional]] (1 noticia)
+- [[laboratorio_de_criminalistica_de_la_pdi]] (1 noticia)
+- [[municipalidad_de_la_serena]] (1 noticia)
+- [[municipio_de_coquimbo]] (1 noticia)
+- [[poder_judicial]] (1 noticia)
+- [[policia_de_investigacion_pdi]] (1 noticia)
+- [[policia_maritima]] (1 noticia)
+- [[prefectura_del_choapa]] (1 noticia)
+- [[sar_raul_silva_henriquez]] (1 noticia)
+- [[seccion_de_investigacion_policial_sip]] (1 noticia)
+- [[secretaria_regional_ministerial_de_seguridad_publica]] (1 noticia)
+- [[seremi_de_seguridad]] (1 noticia)
+- [[sip_de_la_1a_comisaria_de_la_serena]] (1 noticia)
+- [[sip_de_la_primera_comisaria_la_serena]] (1 noticia)
+- [[tenencia_de_carreteras_choapa]] (1 noticia)
+- [[tercera_comisaria_de_ovalle]] (1 noticia)
+- [[tribunal_de_garantia]] (1 noticia)
+- [[tribunal_de_juicio_oral_en_lo_penal_de_la_serena]] (1 noticia)
+- [[tribunal_de_juicio_oral_en_lo_penal_de_ovalle]] (1 noticia)
+
+## Lugares
+- [[la_serena]] (19 noticias)
+- [[coquimbo]] (17 noticias)
+- [[ovalle]] (9 noticias)
+- [[region_de_coquimbo]] (8 noticias)
+- [[limari]] (4 noticias)
+- [[ruta_5_norte]] (4 noticias)
+- [[salamanca]] (3 noticias)
+- [[tierras_blancas]] (3 noticias)
+- [[caleta_san_pedro]] (2 noticias)
+- [[calle_brasil]] (2 noticias)
+- [[caren]] (2 noticias)
+- [[chanaral_alto]] (2 noticias)
+- [[la_recova]] (2 noticias)
+- [[las_heras]] (2 noticias)
+- [[llanos_de_la_chimba]] (2 noticias)
+- [[los_vilos]] (2 noticias)
+- [[monte_patria]] (2 noticias)
+- [[parte_alta]] (2 noticias)
+- [[poblacion_cital]] (2 noticias)
+- [[punta_mira]] (2 noticias)
+- [[sotaqui]] (2 noticias)
+- [[terminal_de_buses_de_coquimbo]] (2 noticias)
+- [[antofagasta]] (1 noticia)
+- [[arica_y_parinacota]] (1 noticia)
+- [[avenida_la_paz]] (1 noticia)
+- [[brasil]] (1 noticia)
+- [[caleta_de_coquimbo]] (1 noticia)
+- [[calle_carlos_rozas]] (1 noticia)
+- [[calle_guatemala]] (1 noticia)
+- [[calle_juan_antonio_rios]] (1 noticia)
+- [[calle_las_heras]] (1 noticia)
+- [[calle_melgarejo]] (1 noticia)
+- [[calle_rengifo]] (1 noticia)
+- [[calles_rengifo_y_brasil]] (1 noticia)
+- [[carlos_rozas]] (1 noticia)
+- [[casco_historico]] (1 noticia)
+- [[chile]] (1 noticia)
+- [[choapa]] (1 noticia)
+- [[cienfuegos]] (1 noticia)
+- [[compania_alta]] (1 noticia)
+- [[copiapo]] (1 noticia)
+- [[ex_casa_de_la_cultura_de_coquimbo]] (1 noticia)
+- [[illapel]] (1 noticia)
+- [[km_282]] (1 noticia)
+- [[la_pampilla]] (1 noticia)
+- [[la_varilla]] (1 noticia)
+- [[las_companias]] (1 noticia)
+- [[lebu]] (1 noticia)
+- [[o_higgins]] (1 noticia)
+- [[region_del_maule]] (1 noticia)
+- [[rengifo]] (1 noticia)
+- [[ruta_d_579]] (1 noticia)
+- [[sector_centrico]] (1 noticia)
+- [[sector_punta_mira]] (1 noticia)
+- [[sector_san_juan]] (1 noticia)
+- [[sotomayor]] (1 noticia)
+- [[vicuna]] (1 noticia)
+- [[villa_portugal]] (1 noticia)
+
+## Objetos
+- [[arma_de_fuego]] (10 noticias)
+- [[arma_cortante]] (7 noticias)
+- [[vehiculo]] (4 noticias)
+- [[arma_blanca]] (2 noticias)
+- [[armas_de_fuego]] (2 noticias)
+- [[botella_de_alcohol]] (2 noticias)
+- [[especies]] (2 noticias)
+- [[municiones]] (2 noticias)
+- [[perdigones]] (2 noticias)
+- [[proyectiles_balisticos]] (2 noticias)
+- [[alimentos]] (1 noticia)
+- [[arma_de_aire_comprimido]] (1 noticia)
+- [[arma_de_fuego_adaptada]] (1 noticia)
+- [[armas]] (1 noticia)
+- [[automovil]] (1 noticia)
+- [[balanza_digital]] (1 noticia)
+- [[bianca_catalina_ii]] (1 noticia)
+- [[cannabis]] (1 noticia)
+- [[cannabis_sativa]] (1 noticia)
+- [[cartuchos_de_municion]] (1 noticia)
+- [[cocaina]] (1 noticia)
+- [[cuchillo]] (1 noticia)
+- [[electrodomesticos]] (1 noticia)
+- [[elemento_contundente]] (1 noticia)
+- [[elemento_contuso]] (1 noticia)
+- [[enseres_personales]] (1 noticia)
+- [[escopeta_modificada]] (1 noticia)
+- [[marihuana]] (1 noticia)
+- [[piedra]] (1 noticia)
+- [[pistola_calibre_9_mm]] (1 noticia)
+- [[pistola_de_fantasia]] (1 noticia)
+- [[placa_patente_de_fabricacion_artesanal]] (1 noticia)
+- [[proyectil_balistico]] (1 noticia)
+- [[regalos_de_navidad]] (1 noticia)
+- [[sustancias_ilicitas]] (1 noticia)
+- [[telefonos_celulares]] (1 noticia)
+- [[utensilios]] (1 noticia)
+- [[vajilla]] (1 noticia)

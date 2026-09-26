@@ -128,16 +128,28 @@ class EscritorVaultObsidian(EscritorObsidian):
             lineas.append("")
 
         # Personas: además del enlace, se anota el rol observado.
+        #
+        # Cuando la noticia no entrega el nombre, el contrato exige null. Esa
+        # persona no puede tener nota propia (sería una entidad inventada),
+        # pero su rol sí es información del hecho: se deja anotada sin enlace.
+        # Omitirla dejaría la sección vacía y daría a entender que no hubo
+        # víctimas ni detenidos, que es justo lo contrario de lo que dice el
+        # texto.
         lineas.append("## Personas")
         personas = data.get("personas") or []
         if personas:
             for persona in personas:
                 nombre = persona.get("nombre") if isinstance(persona, dict) else persona
                 rol = persona.get("rol") if isinstance(persona, dict) else None
-                if not nombre:
-                    continue
-                sufijo = f" — {rol}" if rol else ""
-                lineas.append(f"- {self._enlace(nombre)}{sufijo}")
+                if nombre:
+                    sufijo = f" — {rol}" if rol else ""
+                    lineas.append(f"- {self._enlace(nombre)}{sufijo}")
+                else:
+                    detalle = rol or "rol no precisado"
+                    lineas.append(
+                        f"- Persona sin identificar — {detalle} "
+                        "(la noticia no entrega el nombre)"
+                    )
         else:
             lineas.append("- Sin registros.")
         lineas.append("")

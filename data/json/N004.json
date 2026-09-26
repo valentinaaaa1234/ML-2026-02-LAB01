@@ -1,0 +1,89 @@
+{
+  "id_noticia": "N004",
+  "titulo": "Dos homicidios impactan a Coquimbo y Salamanca",
+  "fecha_publicacion": "2026-08-21",
+  "fuente": "DiarioElDia",
+  "url": "https://www.diarioeldia.cl/noticias/2026/08/21/148411-dos-homicidios-impactan-a-coquimbo-y-salamanca",
+  "resumen": "Dos investigaciones por homicidio se llevan a cabo en las comunas de Coquimbo y Salamanca. En Coquimbo, un hombre de 37 años falleció tras recibir disparos en el sector de Las Heras, y una mujer de 86 años resultó herida de gravedad por impactos balísticos. En Salamanca, un adulto mayor de 84 años fue encontrado muerto en su domicilio con una lesión craneal, caso por el cual una mujer fue detenida.",
+  "delitos": [
+    "homicidio",
+    "lesiones"
+  ],
+  "personas": [
+    {
+      "nombre": null,
+      "rol": "victima"
+    },
+    {
+      "nombre": null,
+      "rol": "victima"
+    },
+    {
+      "nombre": null,
+      "rol": "victima"
+    },
+    {
+      "nombre": null,
+      "rol": "detenido"
+    }
+  ],
+  "organizaciones": [
+    "Policía de Investigaciones",
+    "Brigada de Homicidios La Serena",
+    "Fiscalía ECOH Coquimbo",
+    "Laboratorio de Criminalística Regional La Serena",
+    "Hospital de Coquimbo",
+    "Secretaría Regional Ministerial de Seguridad Pública",
+    "Ministerio Público"
+  ],
+  "lugares": [
+    "Coquimbo",
+    "Salamanca",
+    "Las Heras",
+    "La Serena",
+    "Región de Coquimbo"
+  ],
+  "objetos": [],
+  "relaciones": [
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "Coquimbo"
+    },
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "Salamanca"
+    },
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "Las Heras"
+    },
+    {
+      "origen": "lesiones",
+      "tipo": "OCURRIO_EN",
+      "destino": "Coquimbo"
+    },
+    {
+      "origen": "lesiones",
+      "tipo": "OCURRIO_EN",
+      "destino": "Las Heras"
+    },
+    {
+      "origen": "Brigada de Homicidios La Serena",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "Fiscalía ECOH Coquimbo",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "Fiscalía ECOH Coquimbo",
+      "tipo": "INVESTIGA",
+      "destino": "lesiones"
+    }
+  ]
+}

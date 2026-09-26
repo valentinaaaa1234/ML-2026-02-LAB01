@@ -1,0 +1,104 @@
+{
+  "id_noticia": "N003",
+  "titulo": "Tres asesinatos en menos de dos días elevan a 24 las víctimas en la región",
+  "fecha_publicacion": "2026-08-22",
+  "fuente": "DiarioElDia",
+  "url": "https://www.diarioeldia.cl/noticias/2026/08/22/148498-tres-asesinatos-en-menos-de-dos-dias-elevan-a-24-las-victimas-en-la-region",
+  "resumen": "Tres homicidios registrados en las comunas de Coquimbo y Salamanca elevan a 24 las víctimas en la Región de Coquimbo en lo que va del año 2026. Una mujer fue detenida por el homicidio de un adulto mayor en Salamanca, mientras que otros dos hombres murieron por impactos de bala en Coquimbo, donde además una adulta mayor resultó herida por una bala loca.",
+  "delitos": [
+    "homicidio",
+    "lesiones"
+  ],
+  "personas": [
+    {
+      "nombre": null,
+      "rol": "victima"
+    },
+    {
+      "nombre": null,
+      "rol": "detenido"
+    },
+    {
+      "nombre": null,
+      "rol": "victima"
+    },
+    {
+      "nombre": null,
+      "rol": "victima"
+    },
+    {
+      "nombre": null,
+      "rol": "victima"
+    }
+  ],
+  "organizaciones": [
+    "Brigada de Homicidios La Serena",
+    "Policía de Investigaciones",
+    "Ministerio Público",
+    "Prefectura del Choapa",
+    "Juzgado de Garantía de Illapel",
+    "Hospital San Pablo",
+    "Laboratorio de Criminalística Regional La Serena",
+    "Fiscalía ECOH Coquimbo"
+  ],
+  "lugares": [
+    "Coquimbo",
+    "Salamanca",
+    "Región de Coquimbo",
+    "Las Heras",
+    "Parte Alta",
+    "Punta Mira"
+  ],
+  "objetos": [
+    {
+      "tipo": "arma",
+      "nombre": "elemento contundente",
+      "cantidad": null,
+      "unidad": null
+    },
+    {
+      "tipo": "arma",
+      "nombre": "arma de fuego",
+      "cantidad": null,
+      "unidad": null
+    },
+    {
+      "tipo": "otros",
+      "nombre": "teléfonos celulares",
+      "cantidad": null,
+      "unidad": null
+    }
+  ],
+  "relaciones": [
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "Coquimbo"
+    },
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "Salamanca"
+    },
+    {
+      "origen": "lesiones",
+      "tipo": "OCURRIO_EN",
+      "destino": "Coquimbo"
+    },
+    {
+      "origen": "Brigada de Homicidios La Serena",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "Fiscalía ECOH Coquimbo",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "Ministerio Público",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    }
+  ]
+}

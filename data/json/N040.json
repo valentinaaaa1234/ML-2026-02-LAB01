@@ -1,0 +1,77 @@
+{
+  "id_noticia": "N040",
+  "titulo": "Detienen a hombre tras homicidio en plena vía pública de La Serena: víctima tenía 27 años",
+  "fecha_publicacion": "2026-04-17",
+  "fuente": "BioBioChile",
+  "url": "https://www.biobiochile.cl/noticias/nacional/region-de-coquimbo/2026/04/17/detienen-a-hombre-tras-homicidio-en-plena-via-publica-de-la-serena-victima-tenia-27-anos.shtml",
+  "resumen": "Un hombre de 27 años falleció tras ser apuñalado en una riña en el centro de La Serena, Región de Coquimbo. Tras diligencias de la SIP de la 1ª Comisaría de La Serena, OS9 y Labocar, se logró detener al presunto responsable, un ciudadano extranjero. La Fiscalía ECOH y la PDI quedaron a cargo de la investigación del homicidio.",
+  "delitos": [
+    "homicidio"
+  ],
+  "personas": [
+    {
+      "nombre": null,
+      "rol": "victima"
+    },
+    {
+      "nombre": null,
+      "rol": "detenido"
+    }
+  ],
+  "organizaciones": [
+    "OS9",
+    "Labocar",
+    "SIP de la 1ª Comisaría de La Serena",
+    "PDI",
+    "Fiscalía ECOH",
+    "Diario El Día"
+  ],
+  "lugares": [
+    "La Serena",
+    "Región de Coquimbo",
+    "calles Rengifo y Brasil"
+  ],
+  "objetos": [],
+  "relaciones": [
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "La Serena"
+    },
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "Región de Coquimbo"
+    },
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "calles Rengifo y Brasil"
+    },
+    {
+      "origen": "PDI",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "Fiscalía ECOH",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "OS9",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "Labocar",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "SIP de la 1ª Comisaría de La Serena",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    }
+  ]
+}

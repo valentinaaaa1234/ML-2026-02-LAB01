@@ -1,0 +1,74 @@
+{
+  "id_noticia": "N035",
+  "titulo": "Prisión preventiva para sujeto que apuñaló a tres personas en Ovalle",
+  "fecha_publicacion": null,
+  "fuente": "ElOvallino",
+  "url": "https://www.elovallino.cl/prision-preventiva-para-sujeto-que-apunalo-a-tres-personas-en-ovalle/",
+  "resumen": "Un joven de 19 años fue decretado en prisión preventiva por la Corte de Apelaciones tras ser imputado por el delito de homicidio frustrado, luego de agredir con un cuchillo a tres personas al interior de un domicilio en la comuna de Ovalle.",
+  "delitos": [
+    "homicidio frustrado"
+  ],
+  "personas": [
+    {
+      "nombre": "M.A.S.C.",
+      "rol": "imputado"
+    },
+    {
+      "nombre": null,
+      "rol": "victima"
+    }
+  ],
+  "organizaciones": [
+    "Corte de Apelaciones",
+    "Ministerio Público",
+    "Carabineros",
+    "Tercera Comisaría de Ovalle",
+    "delegación presidencial del Limarí"
+  ],
+  "lugares": [
+    "Ovalle",
+    "Limarí",
+    "avenida La Paz",
+    "sector céntrico"
+  ],
+  "objetos": [
+    {
+      "tipo": "arma",
+      "nombre": "cuchillo",
+      "cantidad": 1,
+      "unidad": "unidad"
+    }
+  ],
+  "relaciones": [
+    {
+      "origen": "M.A.S.C.",
+      "tipo": "IMPUTADO_POR",
+      "destino": "homicidio frustrado"
+    },
+    {
+      "origen": "M.A.S.C.",
+      "tipo": "UTILIZO",
+      "destino": "cuchillo"
+    },
+    {
+      "origen": "homicidio frustrado",
+      "tipo": "OCURRIO_EN",
+      "destino": "Ovalle"
+    },
+    {
+      "origen": "homicidio frustrado",
+      "tipo": "OCURRIO_EN",
+      "destino": "avenida La Paz"
+    },
+    {
+      "origen": "M.A.S.C.",
+      "tipo": "DETENIDO_EN",
+      "destino": "sector céntrico"
+    },
+    {
+      "origen": "Ministerio Público",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio frustrado"
+    }
+  ]
+}

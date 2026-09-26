@@ -1,0 +1,73 @@
+{
+  "id_noticia": "N025",
+  "titulo": "Carabineros OS7 detiene en Los Vilos a sujeto con orden vigente por homicidio y más de 18 kilos de marihuana",
+  "fecha_publicacion": "2026-08-05",
+  "fuente": "LaSerenaOnline",
+  "url": "https://laserenaonline.cl/2026/08/05/carabineros-os7-detiene-en-los-vilos-a-sujeto-con-orden-vigente-por-homicidio-y-mas-de-18-kilos-de-marihuana/",
+  "resumen": "Personal de Carabineros OS7, en conjunto con la Tenencia de Carreteras Choapa, detuvo en Los Vilos a un sujeto de 21 años identificado como R.A.V.M., quien conducía un vehículo robado con patentes adulteradas, transportaba más de 18 kilos de cannabis y registraba una orden de detención vigente por homicidio.",
+  "delitos": [
+    "trafico de drogas",
+    "receptacion",
+    "homicidio"
+  ],
+  "personas": [
+    {
+      "nombre": "R.A.V.M.",
+      "rol": "detenido"
+    }
+  ],
+  "organizaciones": [
+    "Carabineros OS7",
+    "Tenencia de Carreteras Choapa"
+  ],
+  "lugares": [
+    "Los Vilos",
+    "Ruta 5 Norte"
+  ],
+  "objetos": [
+    {
+      "tipo": "droga",
+      "nombre": "cannabis",
+      "cantidad": 18.895,
+      "unidad": "kilos"
+    },
+    {
+      "tipo": "vehiculo",
+      "nombre": "automóvil",
+      "cantidad": 1,
+      "unidad": "unidad"
+    }
+  ],
+  "relaciones": [
+    {
+      "origen": "R.A.V.M.",
+      "tipo": "DETENIDO_EN",
+      "destino": "Los Vilos"
+    },
+    {
+      "origen": "R.A.V.M.",
+      "tipo": "IMPUTADO_POR",
+      "destino": "trafico de drogas"
+    },
+    {
+      "origen": "R.A.V.M.",
+      "tipo": "IMPUTADO_POR",
+      "destino": "receptacion"
+    },
+    {
+      "origen": "R.A.V.M.",
+      "tipo": "IMPUTADO_POR",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "R.A.V.M.",
+      "tipo": "UTILIZO",
+      "destino": "automóvil"
+    },
+    {
+      "origen": "cannabis",
+      "tipo": "INCAUTADO_EN",
+      "destino": "Los Vilos"
+    }
+  ]
+}

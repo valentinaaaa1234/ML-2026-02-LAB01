@@ -147,10 +147,30 @@ class PipelineLaboratorio:
                 fallos += 1
                 print(f"    Error: {exc}")
         print(f"Extracción finalizada: {ok} ok, {fallos} fallos, {len(noticias)} total")
+        # Las advertencias se imprimen una a una durante el lote; el reporte
+        # agregado es el que se cita en el informe de calidad.
+        self.validador.imprimir_reporte()
         return ok, fallos
 
+    def ejecutar_validacion(self) -> dict:
+        """Revalida data/json/*.json sin volver a llamar a Gemini.
+
+        La extracción consume cuota de API, así que el control de calidad
+        se separa en su propia etapa: permite reproducir el reporte de
+        advertencias cuantas veces haga falta mientras se escribe el
+        informe, sin gastar una sola llamada al modelo.
+        """
+        print("== Etapa: validar (contrato de datos) ==")
+        resumen = self.validador.validar_directorio(DIR_JSON)
+        print(
+            f"Validación finalizada: {resumen['validos']} válidos, "
+            f"{resumen['rechazados']} rechazados"
+        )
+        self.validador.imprimir_reporte()
+        return resumen
+
     def ejecutar_obsidian(self) -> None:
-        """TODO(alumno): JSON → notas Markdown enlazadas."""
+        """JSON validado → notas Markdown enlazadas (vault de Obsidian)."""
         print("== Etapa: obsidian (vault) ==")
         try:
             self.escritor.escribir_vault([])
@@ -158,7 +178,7 @@ class PipelineLaboratorio:
             print(pendiente)
 
     def ejecutar_analisis(self) -> None:
-        """TODO(alumno): Data Understanding y visualizaciones."""
+        """Data Understanding: estadísticas y visualizaciones del corpus."""
         print("== Etapa: analizar (Data Understanding) ==")
         try:
             self.explorador.ejecutar()
@@ -170,5 +190,6 @@ class PipelineLaboratorio:
         self.ejecutar_descubrimiento()
         self.ejecutar_captura()
         self.ejecutar_extraccion()
+        self.ejecutar_validacion()
         self.ejecutar_obsidian()
         self.ejecutar_analisis()

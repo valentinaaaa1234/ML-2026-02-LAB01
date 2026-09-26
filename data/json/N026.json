@@ -1,0 +1,59 @@
+{
+  "id_noticia": "N026",
+  "titulo": "Investigan homicidio al interior del Terminal de Buses de Coquimbo",
+  "fecha_publicacion": "2026-07-17",
+  "fuente": "LaSerenaOnline",
+  "url": "https://laserenaonline.cl/2026/07/17/investigan-homicidio-al-interior-del-terminal-de-buses-de-coquimbo/",
+  "resumen": "La Brigada de Homicidios La Serena y el Laboratorio Criminalístico Regional realizan diligencias para esclarecer el homicidio de un hombre de 42 años, quien fue atacado con un arma cortante en el Terminal de Buses de Coquimbo tras sostener una discusión con una locataria.",
+  "delitos": [
+    "homicidio"
+  ],
+  "personas": [
+    {
+      "nombre": null,
+      "rol": "victima"
+    },
+    {
+      "nombre": null,
+      "rol": "profugo"
+    }
+  ],
+  "organizaciones": [
+    "Brigada de Homicidios La Serena",
+    "Laboratorio Criminalístico Regional"
+  ],
+  "lugares": [
+    "Coquimbo",
+    "Terminal de Buses de Coquimbo"
+  ],
+  "objetos": [
+    {
+      "tipo": "arma",
+      "nombre": "arma cortante",
+      "cantidad": null,
+      "unidad": null
+    }
+  ],
+  "relaciones": [
+    {
+      "origen": "Brigada de Homicidios La Serena",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "Laboratorio Criminalístico Regional",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "Terminal de Buses de Coquimbo"
+    },
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "Coquimbo"
+    }
+  ]
+}

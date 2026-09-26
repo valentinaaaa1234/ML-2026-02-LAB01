@@ -1,0 +1,76 @@
+{
+  "id_noticia": "N038",
+  "titulo": "Prisión preventiva a hombre acusado de homicidio consumado y frustrado tras riña vecinal en La Serena",
+  "fecha_publicacion": "2026-05-23",
+  "fuente": "BioBioChile",
+  "url": "https://www.biobiochile.cl/noticias/nacional/region-de-coquimbo/2026/05/23/prision-preventiva-a-hombre-acusado-de-homicidio-consumado-y-frustrado-tras-rina-vecinal-en-la-serena.shtml",
+  "resumen": "Un sujeto quedó en prisión preventiva tras protagonizar una riña en el sector de tomas 'La Varilla' en La Serena, donde disparó contra dos personas, resultando una fallecida y otra herida. La PDI detuvo al imputado, quien fue formalizado por la Fiscalía por homicidio consumado, homicidio frustrado, porte ilegal de arma de fuego modificada, receptación y porte de municiones.",
+  "delitos": [
+    "homicidio",
+    "homicidio frustrado",
+    "porte ilegal de armas",
+    "receptacion"
+  ],
+  "personas": [
+    {
+      "nombre": null,
+      "rol": "detenido"
+    },
+    {
+      "nombre": null,
+      "rol": "victima"
+    },
+    {
+      "nombre": null,
+      "rol": "victima"
+    }
+  ],
+  "organizaciones": [
+    "PDI",
+    "SAR Raúl Silva Henríquez",
+    "Tribunal de Garantía",
+    "Fiscalía"
+  ],
+  "lugares": [
+    "La Serena",
+    "región de Coquimbo",
+    "La Varilla",
+    "Las Compañías"
+  ],
+  "objetos": [
+    {
+      "tipo": "arma",
+      "nombre": "escopeta modificada",
+      "cantidad": 1,
+      "unidad": "unidad"
+    },
+    {
+      "tipo": "municion",
+      "nombre": "municiones",
+      "cantidad": null,
+      "unidad": null
+    }
+  ],
+  "relaciones": [
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "La Serena"
+    },
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "La Varilla"
+    },
+    {
+      "origen": "homicidio frustrado",
+      "tipo": "OCURRIO_EN",
+      "destino": "La Serena"
+    },
+    {
+      "origen": "Fiscalía",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    }
+  ]
+}

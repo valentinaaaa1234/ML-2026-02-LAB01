@@ -1,0 +1,104 @@
+{
+  "id_noticia": "N005",
+  "titulo": "Tras casi un año prófugo: cae adolescente imputado por homicidio en Coquimbo",
+  "fecha_publicacion": "2026-08-06",
+  "fuente": "DiarioElDia",
+  "url": "https://www.diarioeldia.cl/noticias/2026/08/06/146914-tras-casi-un-ano-profugo-cae-adolescente-imputado-por-homicidio-en-coquimbo",
+  "resumen": "La PDI detuvo en Coquimbo a un adolescente de 17 años que se encontraba prófugo por un homicidio ocurrido en septiembre de 2025. En el operativo, realizado en el sector San Juan, también se detuvo a otro joven de 18 años por microtráfico y se incautaron armas, municiones y droga.",
+  "delitos": [
+    "homicidio",
+    "robo",
+    "microtrafico"
+  ],
+  "personas": [
+    {
+      "nombre": null,
+      "rol": "detenido"
+    },
+    {
+      "nombre": null,
+      "rol": "detenido"
+    },
+    {
+      "nombre": null,
+      "rol": "victima"
+    }
+  ],
+  "organizaciones": [
+    "PDI",
+    "Brigada de Homicidios de La Serena",
+    "BIRO La Serena",
+    "BICRIM Coquimbo",
+    "Juzgado de Garantía de Coquimbo"
+  ],
+  "lugares": [
+    "Coquimbo",
+    "sector San Juan",
+    "sector Punta Mira"
+  ],
+  "objetos": [
+    {
+      "tipo": "arma",
+      "nombre": "pistola calibre 9 mm",
+      "cantidad": 1,
+      "unidad": "unidad"
+    },
+    {
+      "tipo": "municion",
+      "nombre": "cartuchos de munición",
+      "cantidad": 40,
+      "unidad": "unidades"
+    },
+    {
+      "tipo": "arma",
+      "nombre": "arma de aire comprimido",
+      "cantidad": 1,
+      "unidad": "unidad"
+    },
+    {
+      "tipo": "arma",
+      "nombre": "pistola de fantasía",
+      "cantidad": 1,
+      "unidad": "unidad"
+    },
+    {
+      "tipo": "droga",
+      "nombre": "cannabis sativa",
+      "cantidad": 230,
+      "unidad": "gramos"
+    },
+    {
+      "tipo": "objeto",
+      "nombre": "balanza digital",
+      "cantidad": 1,
+      "unidad": "unidad"
+    }
+  ],
+  "relaciones": [
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "Coquimbo"
+    },
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "sector Punta Mira"
+    },
+    {
+      "origen": "pistola calibre 9 mm",
+      "tipo": "INCAUTADO_EN",
+      "destino": "sector San Juan"
+    },
+    {
+      "origen": "cannabis sativa",
+      "tipo": "INCAUTADO_EN",
+      "destino": "sector San Juan"
+    },
+    {
+      "origen": "Brigada de Homicidios de La Serena",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    }
+  ]
+}

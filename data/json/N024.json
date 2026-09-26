@@ -1,0 +1,80 @@
+{
+  "id_noticia": "N024",
+  "titulo": "Los Vilos: Conductor buscado por homicidio llevaba drogas y quedó en prisión preventiva",
+  "fecha_publicacion": "2026-08-07",
+  "fuente": "LaSerenaOnline",
+  "url": "https://laserenaonline.cl/2026/08/07/los-vilos-conductor-buscado-por-homicidio-llevaba-drogas-y-quedo-en-prision-preventiva/",
+  "resumen": "Un conductor que mantenía una orden de detención vigente por homicidio en la región del Maule fue detenido por Carabineros en Los Vilos tras intentar darse a la fuga. Al fiscalizar el vehículo, el cual tenía encargo por robo y placas patentes falsas, se encontraron más de 18 kilos de marihuana en su interior. El Juzgado de Garantía decretó su prisión preventiva.",
+  "delitos": [
+    "homicidio",
+    "trafico de drogas",
+    "receptacion",
+    "otro"
+  ],
+  "personas": [
+    {
+      "nombre": null,
+      "rol": "imputado"
+    }
+  ],
+  "organizaciones": [
+    "Juzgado de Garantía",
+    "Carabineros",
+    "Fiscalía",
+    "fiscalía local de Los Vilos"
+  ],
+  "lugares": [
+    "Los Vilos",
+    "ruta 5 norte",
+    "km 282",
+    "Illapel",
+    "región del Maule"
+  ],
+  "objetos": [
+    {
+      "tipo": "droga",
+      "nombre": "marihuana",
+      "cantidad": 18.895,
+      "unidad": "kilos"
+    },
+    {
+      "tipo": "vehiculo",
+      "nombre": "vehículo",
+      "cantidad": 1,
+      "unidad": "unidad"
+    },
+    {
+      "tipo": "otro",
+      "nombre": "placa patente de fabricación artesanal",
+      "cantidad": 1,
+      "unidad": "unidad"
+    }
+  ],
+  "relaciones": [
+    {
+      "origen": "Fiscalía",
+      "tipo": "INVESTIGA",
+      "destino": "trafico de drogas"
+    },
+    {
+      "origen": "Fiscalía",
+      "tipo": "INVESTIGA",
+      "destino": "receptacion"
+    },
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "región del Maule"
+    },
+    {
+      "origen": "marihuana",
+      "tipo": "INCAUTADO_EN",
+      "destino": "Los Vilos"
+    },
+    {
+      "origen": "vehículo",
+      "tipo": "INCAUTADO_EN",
+      "destino": "Los Vilos"
+    }
+  ]
+}

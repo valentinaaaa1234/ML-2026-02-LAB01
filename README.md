@@ -5,9 +5,15 @@ Pipeline académico para transformar **noticias delictuales no estructuradas** e
 El repositorio cubre dos entregas:
 
 1. **Lab 01:** captura (Google News + medios chilenos) y limpieza de texto.
-2. **Lab 02:** extracción con Gemini y validación JSON. El **vault de Obsidian** y las visualizaciones siguen siendo `TODO(alumno)`.
+2. **Lab 02:** extracción con Gemini, validación JSON, vault de Obsidian y visualizaciones.
 
-La implementación de Gemini es **mínima y ejecutable**: el alumno debe mejorar el prompt, el parseo y el manejo de errores.
+Todas las etapas `TODO(alumno)` están implementadas. El corpus procesado tiene **39 noticias** de la Región de Coquimbo, con 0 rechazos del contrato de datos.
+
+## Informe del laboratorio
+
+- [Informe](informe/informe-lab01.md): problema, metodología, resultados, errores del LLM y análisis de relaciones.
+- [Ficha de Business Understanding](informe/ficha-business-understanding.md): usuario, problema, alcance y restricciones éticas.
+- [Auditoría de 10 noticias](informe/auditoria-10-noticias.md): revisión manual del texto original contra el JSON extraído.
 
 No se entrena clustering. Los grupos de noticias se forman por **relaciones explícitas** (mismo delito, persona, organización o lugar).
 
@@ -47,10 +53,13 @@ Desde la raíz del repositorio, con el entorno activado:
 python main.py descubrir   # RSS de Google News → actualiza data/urls.csv
 python main.py capturar    # URLs → data/raw/*.html y data/processed/*.txt
 python main.py extraer     # Gemini → data/json/*.json (requiere GEMINI_API_KEY)
-python main.py obsidian    # TODO(alumno): vault Markdown
-python main.py analizar    # TODO(alumno): Data Understanding
-python main.py pipeline    # descubrir + capturar + extraer; avisa etapas pendientes
+python main.py validar     # Revalida data/json/*.json sin llamar a Gemini
+python main.py obsidian    # JSON → obsidian_vault/ con notas enlazadas
+python main.py analizar    # Data Understanding → data/figuras/*.png
+python main.py pipeline    # todas las etapas en orden
 ```
+
+La etapa `validar` se agregó para poder reproducir el reporte de calidad sin gastar cuota de API: la extracción ya consumió sus llamadas, el control de calidad se repite cuantas veces haga falta.
 
 El identificador `id_noticia` se conserva en todo el flujo: `N001.html` → `N001.txt` → `N001.json` → `Noticias/N001.md`.
 
@@ -65,12 +74,12 @@ Para probar el escritor de Obsidian **sin** llamar a Gemini, use el fixture [dat
 | `src/modelos.py` | Listo | Dataclasses del contrato JSON |
 | `src/pipeline.py` + `main.py` | Listo | Orquestación por etapas |
 | `src/conocimiento/utilidades.py` | Listo | `slugify` y `[[wiki-links]]` para cuando complete Obsidian |
-| `src/extraccion/` | Listo (simple) | Prompt + llamada a Gemini + `data/json/`; el alumno puede mejorarlo |
-| `src/validacion/` | Listo (simple) | `json.loads`, campos obligatorios y tipos lista |
-| `src/conocimiento/obsidian.py` | `TODO(alumno)` | Notas Markdown enlazadas |
-| `src/analisis/` | `TODO(alumno)` | Gráficos de calidad y cobertura |
+| `src/extraccion/` | Listo | Prompt de esquema estricto con vocabularios cerrados, reintentos ante 429/503, reutilización de JSON ya generados |
+| `src/validacion/` | Listo | Contrato de datos + revisiones de calidad: roles procesales, nombres genéricos, relaciones sin respaldo |
+| `src/conocimiento/obsidian.py` | Listo | Notas Markdown enlazadas, notas por entidad con co-apariciones, índice general |
+| `src/analisis/` | Listo | Siete gráficos de calidad y cobertura en `data/figuras/` |
 
-Si ejecuta una etapa pendiente, el programa imprime una pista y **no falla en silencio**.
+El validador distingue dos niveles: los errores rompen el contrato y descartan la noticia; las advertencias registran problemas de calidad sin detener el proceso, para reportarlos en el Data Understanding.
 
 ## Diseño en breve
 
@@ -90,7 +99,9 @@ Cada noticia extraída debe incluir: `id_noticia`, `titulo`, `fecha_publicacion`
 
 Si un dato no aparece en el texto, use `null` o una lista vacía. **No invente** entidades ni culpabilidad.
 
-## Vault de Obsidian (objetivo del alumno)
+## Vault de Obsidian
+
+Se genera con `python main.py obsidian`. El corpus actual produce 237 notas: 39 de noticias, 11 de delitos, 9 de personas, 73 de organizaciones, 58 de lugares, 38 de objetos, 9 de tipos de relación. Para explorarlo, abra la carpeta `obsidian_vault/` desde Obsidian con *Open folder as vault*, partiendo por `00_Indice.md`.
 
 ```
 obsidian_vault/
@@ -109,8 +120,10 @@ Las relaciones se expresan con enlaces `[[...]]`. No se usa SQLite, MongoDB ni N
 ## Datos de ejemplo
 
 - [data/consultas.csv](data/consultas.csv): búsquedas semilla para Google News
-- [data/urls.csv](data/urls.csv): cuatro noticias públicas (BioBioChile, Cooperativa, La Tercera)
+- [data/urls.csv](data/urls.csv): URLs del corpus (LaSerenaOnline, Diario El Día, BioBioChile, El Ovallino, Diario La Región)
 - [data/json/ejemplo_N001.json](data/json/ejemplo_N001.json): JSON de ejemplo para implementar Obsidian sin API
+- `data/json_prompt_v1/`: salida del prompt libre, conservada para comparar contra el prompt estricto (ver informe, sección 2.1)
+- `data/figuras/`: los siete gráficos del Data Understanding
 
 Las URLs de prensa cambian con el tiempo. Si una descarga falla, el lote continúa y registra el error. Puede ampliar `urls.csv` a mano (30–50 URLs verificadas, como pide la guía).
 
@@ -136,8 +149,11 @@ src/adquisicion/        Captura (implementada)
 src/limpieza/           Limpieza HTML (implementada)
 src/extraccion/         Gemini (implementación simple)
 src/validacion/         Validación JSON (implementación simple)
-src/conocimiento/       Interfaz Obsidian + slugify
-src/analisis/           Interfaz Data Understanding
-data/                   URLs, HTML, texto, JSON
-obsidian_vault/         Bóveda (a generar por el alumno)
+src/conocimiento/       Escritor del vault Obsidian + slugify
+src/analisis/           Data Understanding (estadísticas y figuras)
+data/                   URLs, texto procesado, JSON y figuras
+obsidian_vault/         Bóveda generada (237 notas enlazadas)
+informe/                Informe, ficha de Business Understanding y auditoría
 ```
+
+El HTML crudo de `data/raw/` no se versiona: son unos 16 MB que se regeneran con `python main.py capturar`.

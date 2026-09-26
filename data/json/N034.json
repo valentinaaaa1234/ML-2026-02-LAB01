@@ -1,0 +1,144 @@
+{
+  "id_noticia": "N034",
+  "titulo": "Doble homicidio en Sotaquí desata temor vecinal por ola de robos",
+  "fecha_publicacion": null,
+  "fuente": "ElOvallino",
+  "url": "https://www.elovallino.cl/doble-homicidio-en-sotaqui-desata-temor-vecinal-por-ola-de-robos/",
+  "resumen": "El hallazgo de dos hombres asesinados con impactos de perdigones en un predio agrícola de Sotaquí, comuna de Ovalle, ha movilizado a la Fiscalía y a la PDI. El hecho ocurre en medio de una creciente preocupación de los vecinos por una ola de robos, microtráfico y receptación en la zona.",
+  "delitos": [
+    "homicidio",
+    "robo",
+    "amenazas",
+    "microtrafico",
+    "receptacion"
+  ],
+  "personas": [
+    {
+      "nombre": null,
+      "rol": "victima"
+    },
+    {
+      "nombre": null,
+      "rol": "victima"
+    }
+  ],
+  "organizaciones": [
+    "Fiscalía Regional de Coquimbo",
+    "Ministerio Público",
+    "Laboratorio de Criminalística Regional de Coquimbo",
+    "Equipo contra el Crimen Organizado y Homicidios (ECOH)",
+    "Policía de Investigaciones",
+    "Carabineros"
+  ],
+  "lugares": [
+    "Sotaquí",
+    "Ovalle",
+    "Limarí",
+    "Monte Patria",
+    "Chañaral Alto",
+    "Carén"
+  ],
+  "objetos": [
+    {
+      "tipo": "arma",
+      "nombre": "perdigones",
+      "cantidad": null,
+      "unidad": null
+    },
+    {
+      "tipo": "arma",
+      "nombre": "armas",
+      "cantidad": null,
+      "unidad": null
+    },
+    {
+      "tipo": "especie",
+      "nombre": "electrodomésticos",
+      "cantidad": null,
+      "unidad": null
+    },
+    {
+      "tipo": "especie",
+      "nombre": "alimentos",
+      "cantidad": null,
+      "unidad": null
+    },
+    {
+      "tipo": "especie",
+      "nombre": "enseres personales",
+      "cantidad": null,
+      "unidad": null
+    },
+    {
+      "tipo": "especie",
+      "nombre": "regalos de Navidad",
+      "cantidad": null,
+      "unidad": null
+    },
+    {
+      "tipo": "droga",
+      "nombre": "sustancias ilícitas",
+      "cantidad": null,
+      "unidad": null
+    },
+    {
+      "tipo": "especie",
+      "nombre": "utensilios",
+      "cantidad": null,
+      "unidad": null
+    },
+    {
+      "tipo": "especie",
+      "nombre": "vajilla",
+      "cantidad": null,
+      "unidad": null
+    }
+  ],
+  "relaciones": [
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "Sotaquí"
+    },
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "Ovalle"
+    },
+    {
+      "origen": "Equipo contra el Crimen Organizado y Homicidios (ECOH)",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "Policía de Investigaciones",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "Fiscalía Regional de Coquimbo",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "Ministerio Público",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "amenazas",
+      "tipo": "OCURRIO_EN",
+      "destino": "Limarí"
+    },
+    {
+      "origen": "amenazas",
+      "tipo": "OCURRIO_EN",
+      "destino": "Monte Patria"
+    },
+    {
+      "origen": "robo",
+      "tipo": "OCURRIO_EN",
+      "destino": "Sotaquí"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "id_noticia": "N045",
+  "titulo": "Carabineros detuvo a mujer por homicidio frustrado en pleno centro de La Serena",
+  "fecha_publicacion": null,
+  "fuente": "DiarioLaRegion",
+  "url": "https://www.diariolaregion.cl/carabineros-detuvo-a-mujer-por-homicidio-frustrado-en-pleno-centro-de-la-serena/",
+  "resumen": "Carabineros de la SIP de la Primera Comisaría de La Serena detuvieron a una mujer de 63 años, identificada con las iniciales E.C.R.A., imputada por herir con un arma blanca a un hombre de 53 años en situación de calle en el centro de la comuna.",
+  "delitos": [
+    "homicidio frustrado"
+  ],
+  "personas": [
+    {
+      "nombre": "E.C.R.A.",
+      "rol": "detenido"
+    },
+    {
+      "nombre": null,
+      "rol": "victima"
+    }
+  ],
+  "organizaciones": [
+    "Carabineros",
+    "SIP de la Primera Comisaría La Serena",
+    "Ministerio Público"
+  ],
+  "lugares": [
+    "La Serena",
+    "Brasil",
+    "Cienfuegos"
+  ],
+  "objetos": [
+    {
+      "tipo": "arma",
+      "nombre": "arma blanca",
+      "cantidad": null,
+      "unidad": null
+    }
+  ],
+  "relaciones": [
+    {
+      "origen": "E.C.R.A.",
+      "tipo": "IMPUTADO_POR",
+      "destino": "homicidio frustrado"
+    },
+    {
+      "origen": "E.C.R.A.",
+      "tipo": "DETENIDO_EN",
+      "destino": "La Serena"
+    },
+    {
+      "origen": "homicidio frustrado",
+      "tipo": "OCURRIO_EN",
+      "destino": "La Serena"
+    },
+    {
+      "origen": "homicidio frustrado",
+      "tipo": "OCURRIO_EN",
+      "destino": "Brasil"
+    },
+    {
+      "origen": "homicidio frustrado",
+      "tipo": "OCURRIO_EN",
+      "destino": "Cienfuegos"
+    },
+    {
+      "origen": "SIP de la Primera Comisaría La Serena",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio frustrado"
+    },
+    {
+      "origen": "E.C.R.A.",
+      "tipo": "UTILIZO",
+      "destino": "arma blanca"
+    }
+  ]
+}

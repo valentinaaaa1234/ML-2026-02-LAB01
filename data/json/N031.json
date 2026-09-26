@@ -1,0 +1,68 @@
+{
+  "id_noticia": "N031",
+  "titulo": "Crimen en motel de Ovalle: huella en botella fue clave tras ser acribillado con 9 disparos",
+  "fecha_publicacion": null,
+  "fuente": "ElOvallino",
+  "url": "https://www.elovallino.cl/crimen-en-motel-de-ovalle-huella-en-botella-fue-clave-tras-ser-acribillado-con-9-disparos/",
+  "resumen": "La Fiscalía SAC-ECOH formalizó a un imputado por homicidio calificado con alevosía y porte de arma de fuego, tras un ataque ocurrido el 17 de noviembre de 2025 en un motel en el sector Llanos de la Chimba, Ovalle. La víctima falleció tras recibir una golpiza y nueve disparos. Una huella dactilar encontrada en una botella de alcohol en el sitio del suceso permitió vincular al imputado, quien quedó bajo la medida cautelar de prisión preventiva.",
+  "delitos": [
+    "homicidio",
+    "porte ilegal de armas"
+  ],
+  "personas": [
+    {
+      "nombre": null,
+      "rol": "imputado"
+    },
+    {
+      "nombre": null,
+      "rol": "victima"
+    }
+  ],
+  "organizaciones": [
+    "Fiscalía SAC-ECOH",
+    "Ministerio Público",
+    "Juzgado de Garantía de Ovalle",
+    "Policía de Investigaciones"
+  ],
+  "lugares": [
+    "Ovalle",
+    "Llanos de la Chimba"
+  ],
+  "objetos": [
+    {
+      "tipo": "armas",
+      "nombre": "armas de fuego",
+      "cantidad": null,
+      "unidad": null
+    },
+    {
+      "tipo": "otro",
+      "nombre": "botella de alcohol",
+      "cantidad": null,
+      "unidad": null
+    }
+  ],
+  "relaciones": [
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "Ovalle"
+    },
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "Llanos de la Chimba"
+    },
+    {
+      "origen": "Fiscalía SAC-ECOH",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "botella de alcohol",
+      "tipo": "INCAUTADO_EN",
+      "destino": "Llanos de la Chimba"
+    }
+  ]
+}

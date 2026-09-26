@@ -1,0 +1,63 @@
+{
+  "id_noticia": "N027",
+  "titulo": "Investigan homicidio ocurrido en Coquimbo durante esta madrugada",
+  "fecha_publicacion": null,
+  "fuente": "LaSerenaOnline",
+  "url": "https://laserenaonline.cl/2026/04/21/investigan-homicidio-ocurrido-en-coquimbo-durante-esta-madrugada/",
+  "resumen": "La Brigada de Homicidios La Serena investiga el ingreso de un paciente fallecido al SAR de Tierras Blancas en Coquimbo. La víctima, identificada como Y.M.C.P., presentaba lesiones por proyectiles balísticos causadas por un arma de fuego en la vía pública.",
+  "delitos": [
+    "homicidio"
+  ],
+  "personas": [
+    {
+      "nombre": "Y.M.C.P.",
+      "rol": "victima"
+    }
+  ],
+  "organizaciones": [
+    "Brigada de Homicidios La Serena",
+    "SAR de Tierras Blancas",
+    "Laboratorio de Criminalística Regional"
+  ],
+  "lugares": [
+    "Coquimbo",
+    "Tierras Blancas",
+    "calle Carlos Rozas"
+  ],
+  "objetos": [
+    {
+      "tipo": "arma",
+      "nombre": "arma de fuego",
+      "cantidad": null,
+      "unidad": null
+    },
+    {
+      "tipo": "municion",
+      "nombre": "proyectiles balísticos",
+      "cantidad": null,
+      "unidad": null
+    }
+  ],
+  "relaciones": [
+    {
+      "origen": "Y.M.C.P.",
+      "tipo": "VICTIMA_DE",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "Coquimbo"
+    },
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "calle Carlos Rozas"
+    },
+    {
+      "origen": "Brigada de Homicidios La Serena",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    }
+  ]
+}

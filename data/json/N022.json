@@ -1,0 +1,71 @@
+{
+  "id_noticia": "N022",
+  "titulo": "Coquimbo: Fiscalía ECOH y PDI investigan homicidio en la Parte Alta",
+  "fecha_publicacion": "2026-08-22",
+  "fuente": "LaSerenaOnline",
+  "url": "https://laserenaonline.cl/2026/08/22/coquimbo-fiscalia-ecoh-y-pdi-investigan-homicidio-en-la-parte-alta/",
+  "resumen": "La Fiscalía ECOH y la PDI investigan el homicidio de un hombre que ingresó fallecido al hospital de Coquimbo tras recibir impactos balísticos en la Parte Alta. Asimismo, se investiga de manera conjunta el caso de una mujer que ingresó herida a bala proveniente del mismo sector.",
+  "delitos": [
+    "homicidio",
+    "lesiones"
+  ],
+  "personas": [
+    {
+      "nombre": null,
+      "rol": "victima"
+    },
+    {
+      "nombre": null,
+      "rol": "victima"
+    }
+  ],
+  "organizaciones": [
+    "Fiscalía ECOH",
+    "PDI",
+    "hospital de Coquimbo",
+    "Brigada de Homicidios"
+  ],
+  "lugares": [
+    "Coquimbo",
+    "Parte Alta",
+    "calle Las Heras"
+  ],
+  "objetos": [],
+  "relaciones": [
+    {
+      "origen": "PDI",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "Fiscalía ECOH",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "Coquimbo"
+    },
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "Parte Alta"
+    },
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "calle Las Heras"
+    },
+    {
+      "origen": "lesiones",
+      "tipo": "OCURRIO_EN",
+      "destino": "Coquimbo"
+    },
+    {
+      "origen": "lesiones",
+      "tipo": "OCURRIO_EN",
+      "destino": "Parte Alta"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "id_noticia": "N033",
+  "titulo": "Doble homicidio en Sotaquí: hallan a dos hombres baleados en un fundo",
+  "fecha_publicacion": null,
+  "fuente": "ElOvallino",
+  "url": "https://www.elovallino.cl/doble-homicidio-en-sotaqui-hallan-a-dos-hombres-baleados-en-un-fundo/",
+  "resumen": "Dos hombres de nacionalidad chilena fueron encontrados sin vida con impactos de perdigones en un predio agrícola de Sotaquí. La Fiscalía instruyó las diligencias a la PDI y al Laboratorio de Criminalística Regional de Coquimbo.",
+  "delitos": [
+    "homicidio"
+  ],
+  "personas": [
+    {
+      "nombre": null,
+      "rol": "victima"
+    }
+  ],
+  "organizaciones": [
+    "Fiscalía",
+    "Laboratorio de Criminalística Regional de Coquimbo",
+    "PDI",
+    "Servicio Médico Legal"
+  ],
+  "lugares": [
+    "Sotaquí",
+    "Limarí",
+    "Monte Patria",
+    "Ovalle",
+    "Chañaral Alto",
+    "Carén"
+  ],
+  "objetos": [
+    {
+      "tipo": "arma",
+      "nombre": "perdigones",
+      "cantidad": null,
+      "unidad": null
+    }
+  ],
+  "relaciones": [
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "Sotaquí"
+    },
+    {
+      "origen": "PDI",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "Fiscalía",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "Laboratorio de Criminalística Regional de Coquimbo",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    }
+  ]
+}

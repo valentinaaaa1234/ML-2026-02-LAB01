@@ -1,0 +1,67 @@
+{
+  "id_noticia": "N039",
+  "titulo": "Riña termina con hombre asesinado a bala en sector Tierras Blancas de Coquimbo: un detenido",
+  "fecha_publicacion": "2026-04-22",
+  "fuente": "BioBioChile",
+  "url": "https://www.biobiochile.cl/noticias/nacional/region-de-coquimbo/2026/04/22/rina-termina-con-hombre-asesinado-a-bala-en-sector-tierras-blancas-de-coquimbo-un-detenido.shtml",
+  "resumen": "Un hombre de 26 años fue asesinado con un disparo en el tórax durante una riña en el sector de Tierras Blancas, Coquimbo. La Brigada de Homicidios de La Serena identificó y detuvo al presunto autor, un ciudadano chileno de 26 años, quien fue puesto a disposición del Ministerio Público.",
+  "delitos": [
+    "homicidio"
+  ],
+  "personas": [
+    {
+      "nombre": null,
+      "rol": "victima"
+    },
+    {
+      "nombre": null,
+      "rol": "detenido"
+    }
+  ],
+  "organizaciones": [
+    "Brigada de Homicidios de La Serena",
+    "Laboratorio de Criminalística Regional",
+    "Ministerio Público",
+    "SAR de Tierras Blancas"
+  ],
+  "lugares": [
+    "Tierras Blancas",
+    "Coquimbo",
+    "población Cital"
+  ],
+  "objetos": [
+    {
+      "tipo": "arma",
+      "nombre": "arma de fuego",
+      "cantidad": null,
+      "unidad": null
+    }
+  ],
+  "relaciones": [
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "Tierras Blancas"
+    },
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "Coquimbo"
+    },
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "población Cital"
+    },
+    {
+      "origen": "Brigada de Homicidios de La Serena",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "Ministerio Público",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    }
+  ]
+}

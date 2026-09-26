@@ -1,0 +1,50 @@
+{
+  "id_noticia": "N041",
+  "titulo": "Municipalidad de La Serena pide cerrar conocido pub del casco histórico tras homicidio",
+  "fecha_publicacion": "2026-02-26",
+  "fuente": "BioBioChile",
+  "url": "https://www.biobiochile.cl/noticias/nacional/region-de-coquimbo/2026/02/26/municipalidad-de-la-serena-pide-cerrar-conocido-pub-del-casco-historico-tras-homicidio.shtml",
+  "resumen": "La Municipalidad de La Serena solicitó la clausura del pub 'El Bacano', ubicado en el casco histórico de la ciudad, tras un homicidio registrado a las afueras del local el pasado 11 de febrero. A pesar de que los autores del delito fueron detenidos en el momento, el establecimiento continuó funcionando, lo que generó preocupación en los vecinos por diversas irregularidades reportadas en un informe de Carabineros.",
+  "delitos": [
+    "homicidio"
+  ],
+  "personas": [
+    {
+      "nombre": null,
+      "rol": "victima"
+    },
+    {
+      "nombre": null,
+      "rol": "detenido"
+    }
+  ],
+  "organizaciones": [
+    "Municipalidad de La Serena",
+    "El Bacano",
+    "Carabineros",
+    "Delegación Presidencial Regional"
+  ],
+  "lugares": [
+    "La Serena",
+    "región de Coquimbo",
+    "casco histórico"
+  ],
+  "objetos": [],
+  "relaciones": [
+    {
+      "origen": "El Bacano",
+      "tipo": "OPERA_EN",
+      "destino": "casco histórico"
+    },
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "casco histórico"
+    },
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "La Serena"
+    }
+  ]
+}

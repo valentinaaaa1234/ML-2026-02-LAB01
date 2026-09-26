@@ -1,0 +1,70 @@
+{
+  "id_noticia": "N007",
+  "titulo": "Homicidio a plena luz del día en La Serena: autor fue detenido",
+  "fecha_publicacion": "2026-04-16",
+  "fuente": "DiarioElDia",
+  "url": "https://www.diarioeldia.cl/noticias/2026/04/16/134520-homicidio-a-plena-luz-del-dia-en-la-serena-autor-fue-detenido",
+  "resumen": "Un hombre de 27 años falleció tras ser apuñalado con un arma blanca en la intersección de las calles Rengifo y Brasil en La Serena. Posteriormente, Carabineros detuvo al presunto autor del hecho, un ciudadano extranjero mayor de edad.",
+  "delitos": [
+    "homicidio"
+  ],
+  "personas": [
+    {
+      "nombre": null,
+      "rol": "victima"
+    },
+    {
+      "nombre": null,
+      "rol": "detenido"
+    }
+  ],
+  "organizaciones": [
+    "Carabineros",
+    "OS9",
+    "Labocar",
+    "Sección de Investigación Policial (SIP)",
+    "1ª Comisaría de La Serena",
+    "Policía de Investigación (PDI)",
+    "Equipo de Crimen Organizado y Homicidios (ECOH)"
+  ],
+  "lugares": [
+    "La Serena",
+    "calle Rengifo",
+    "calle Brasil"
+  ],
+  "objetos": [
+    {
+      "tipo": "arma",
+      "nombre": "arma blanca",
+      "cantidad": null,
+      "unidad": null
+    }
+  ],
+  "relaciones": [
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "La Serena"
+    },
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "calle Rengifo"
+    },
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "calle Brasil"
+    },
+    {
+      "origen": "Policía de Investigación (PDI)",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "Equipo de Crimen Organizado y Homicidios (ECOH)",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "id_noticia": "N018",
+  "titulo": "La Serena: Fiscalía y PDI investigan homicidio ocurrido en Caleta San Pedro",
+  "fecha_publicacion": "2026-09-08",
+  "fuente": "LaSerenaOnline",
+  "url": "https://laserenaonline.cl/2026/09/08/la-serena-fiscalia-y-pdi-investigan-homicidio-ocurrido-en-caleta-san-pedro/",
+  "resumen": "La Fiscalía y la PDI se encuentran investigando un homicidio ocurrido en el sector de Caleta San Pedro, en La Serena. Sujetos a bordo de un vehículo ingresaron a una vivienda para sustraer especies y dispararon contra la víctima, quien falleció posteriormente en el Hospital de La Serena.",
+  "delitos": [
+    "homicidio",
+    "robo"
+  ],
+  "personas": [
+    {
+      "nombre": null,
+      "rol": "victima"
+    },
+    {
+      "nombre": null,
+      "rol": "imputado"
+    },
+    {
+      "nombre": null,
+      "rol": "testigo"
+    }
+  ],
+  "organizaciones": [
+    "Fiscalía",
+    "equipo ECOH",
+    "Hospital de La Serena",
+    "PDI",
+    "Laboratorio de Criminalística",
+    "Brigada de Homicidios"
+  ],
+  "lugares": [
+    "La Serena",
+    "Caleta San Pedro"
+  ],
+  "objetos": [
+    {
+      "tipo": "vehiculo",
+      "nombre": "vehículo",
+      "cantidad": 1,
+      "unidad": "unidad"
+    },
+    {
+      "tipo": "especies",
+      "nombre": "especies",
+      "cantidad": null,
+      "unidad": null
+    }
+  ],
+  "relaciones": [
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "Caleta San Pedro"
+    },
+    {
+      "origen": "robo",
+      "tipo": "OCURRIO_EN",
+      "destino": "Caleta San Pedro"
+    },
+    {
+      "origen": "Fiscalía",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "PDI",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "equipo ECOH",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "Brigada de Homicidios",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "Laboratorio de Criminalística",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    }
+  ]
+}

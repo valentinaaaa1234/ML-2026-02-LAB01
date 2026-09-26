@@ -1,0 +1,64 @@
+{
+  "id_noticia": "N042",
+  "titulo": "Detienen a tres colombianos acusados de homicidio en un local nocturno en el centro de La Serena",
+  "fecha_publicacion": "2026-02-12",
+  "fuente": "BioBioChile",
+  "url": "https://www.biobiochile.cl/noticias/nacional/region-de-coquimbo/2026/02/12/detienen-a-tres-colombianos-acusados-de-homicidio-en-un-local-nocturno-en-el-centro-de-la-serena.shtml",
+  "resumen": "Tres ciudadanos colombianos fueron detenidos por su presunta participación en el homicidio de un hombre chileno en un local nocturno de La Serena. La víctima falleció en el hospital tras ser golpeada y apuñalada. Uno de los imputados intentó huir al norte del país, siendo capturado en Copiapó.",
+  "delitos": [
+    "homicidio"
+  ],
+  "personas": [
+    {
+      "nombre": null,
+      "rol": "victima"
+    },
+    {
+      "nombre": null,
+      "rol": "detenido"
+    },
+    {
+      "nombre": null,
+      "rol": "detenido"
+    },
+    {
+      "nombre": null,
+      "rol": "detenido"
+    }
+  ],
+  "organizaciones": [
+    "Policía de Investigaciones",
+    "Ministerio Público",
+    "Hospital de La Serena",
+    "Juzgado de Garantía de La Serena"
+  ],
+  "lugares": [
+    "La Serena",
+    "Copiapó"
+  ],
+  "objetos": [
+    {
+      "tipo": "arma",
+      "nombre": "arma cortante",
+      "cantidad": 1,
+      "unidad": "unidad"
+    }
+  ],
+  "relaciones": [
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "La Serena"
+    },
+    {
+      "origen": "Policía de Investigaciones",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "Ministerio Público",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    }
+  ]
+}

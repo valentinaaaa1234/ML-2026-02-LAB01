@@ -1,0 +1,84 @@
+{
+  "id_noticia": "N009",
+  "titulo": "Segundo homicidio del año en la región se registra en Ovalle",
+  "fecha_publicacion": "2025-01-25",
+  "fuente": "DiarioElDia",
+  "url": "https://www.diarioeldia.cl/noticias/2025/01/25/124707-segundo-homicidio-del-ano-en-la-region-se-registra-en-ovalle",
+  "resumen": "Un hombre de 29 años falleció tras ingresar con un impacto de bala al Hospital Provincial de Ovalle. El hecho, bajo investigación de la PDI y la Fiscalía ECOH, habría ocurrido en la ruta D-579 en la comuna de Ovalle. Este corresponde al segundo homicidio del año en la Región de Coquimbo, tras un primer caso registrado en la comuna de Coquimbo.",
+  "delitos": [
+    "homicidio"
+  ],
+  "personas": [
+    {
+      "nombre": null,
+      "rol": "victima"
+    },
+    {
+      "nombre": null,
+      "rol": "victima"
+    }
+  ],
+  "organizaciones": [
+    "Hospital Provincial de Ovalle",
+    "Fiscalía",
+    "PDI",
+    "Carabineros",
+    "Ministerio Público",
+    "Brigada de Homicidios",
+    "Laboratorio de Criminalística",
+    "Equipo de Crimen Organizado y Homicidios (ECOH)"
+  ],
+  "lugares": [
+    "Ovalle",
+    "ruta D-579",
+    "Región de Coquimbo",
+    "Coquimbo",
+    "calle Juan Antonio Ríos",
+    "La Serena"
+  ],
+  "objetos": [
+    {
+      "tipo": "arma",
+      "nombre": "proyectil balístico",
+      "cantidad": 1,
+      "unidad": "unidad"
+    }
+  ],
+  "relaciones": [
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "Ovalle"
+    },
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "ruta D-579"
+    },
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "Coquimbo"
+    },
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "calle Juan Antonio Ríos"
+    },
+    {
+      "origen": "PDI",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "Fiscalía",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "Carabineros",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    }
+  ]
+}

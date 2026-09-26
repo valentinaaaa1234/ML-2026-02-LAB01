@@ -1,0 +1,105 @@
+{
+  "id_noticia": "N046",
+  "titulo": "Seremi de Seguridad María José Duarte tras homicidio en Coquimbo: «Son hechos graves y no los vamos a relativizar»",
+  "fecha_publicacion": null,
+  "fuente": "DiarioLaRegion",
+  "url": "https://www.diariolaregion.cl/seremi-de-seguridad-maria-jose-duarte-tras-homicidio-en-coquimbo-son-hechos-graves-y-no-los-vamos-a-relativizar/",
+  "resumen": "El Gobierno anunció un refuerzo policial en Coquimbo y La Serena tras registrarse tres homicidios en menos de dos semanas, el último de ellos ocurrido en la población Cital de Tierras Blancas, donde una persona falleció por impactos de bala tras una riña, resultando detenido un sujeto de 26 años.",
+  "delitos": [
+    "homicidio"
+  ],
+  "personas": [
+    {
+      "nombre": null,
+      "rol": "detenido"
+    },
+    {
+      "nombre": null,
+      "rol": "victima"
+    }
+  ],
+  "organizaciones": [
+    "Gobierno",
+    "Seremi de Seguridad",
+    "Carabineros",
+    "delegación",
+    "Fiscalía",
+    "equipo ECOH",
+    "Brigada de Homicidios",
+    "PDI",
+    "Ministerio Público",
+    "SAR de Tierras Blancas",
+    "Junta de Vecinos"
+  ],
+  "lugares": [
+    "Coquimbo",
+    "Tierras Blancas",
+    "La Recova",
+    "La Serena",
+    "Sotomayor",
+    "O’Higgins",
+    "Carlos Rozas",
+    "población Cital"
+  ],
+  "objetos": [
+    {
+      "tipo": "arma",
+      "nombre": "arma de fuego",
+      "cantidad": 1,
+      "unidad": "unidad"
+    },
+    {
+      "tipo": "arma",
+      "nombre": "proyectiles balísticos",
+      "cantidad": null,
+      "unidad": null
+    }
+  ],
+  "relaciones": [
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "Coquimbo"
+    },
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "Tierras Blancas"
+    },
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "La Recova"
+    },
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "La Serena"
+    },
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "población Cital"
+    },
+    {
+      "origen": "Fiscalía",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "equipo ECOH",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "Brigada de Homicidios",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "PDI",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    }
+  ]
+}

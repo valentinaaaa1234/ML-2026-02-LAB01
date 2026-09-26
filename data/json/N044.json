@@ -1,0 +1,79 @@
+{
+  "id_noticia": "N044",
+  "titulo": "Tribunal acredita femicidio en asesinato de joven de 17 años en Ovalle: su pareja le disparó",
+  "fecha_publicacion": "2025-07-29",
+  "fuente": "BioBioChile",
+  "url": "https://www.biobiochile.cl/noticias/nacional/region-de-coquimbo/2025/07/29/tribunal-acredita-femicidio-en-asesinato-de-joven-de-17-anos-en-ovalle-su-pareja-le-disparo.shtml",
+  "resumen": "El Tribunal de Juicio Oral en lo Penal de Ovalle declaró culpable a un adolescente de 17 años, identificado con las iniciales L. M. P, por el femicidio íntimo de su pareja, Paulina Cáceres Espinoza, ocurrido en marzo de 2024. La Fiscalía logró acreditar que el disparo fue intencional, descartando la versión de un accidente presentada por la defensa.",
+  "delitos": [
+    "femicidio",
+    "porte ilegal de armas"
+  ],
+  "personas": [
+    {
+      "nombre": "Paulina Cáceres Espinoza",
+      "rol": "victima"
+    },
+    {
+      "nombre": "L. M. P",
+      "rol": "condenado"
+    }
+  ],
+  "organizaciones": [
+    "Tribunal de Juicio Oral en lo Penal de Ovalle",
+    "Fiscalía",
+    "Labocar de Carabineros de Coquimbo",
+    "Colegio Santa María Eufrasia de Ovalle",
+    "Hospital Provincial de Ovalle"
+  ],
+  "lugares": [
+    "Ovalle",
+    "región de Coquimbo"
+  ],
+  "objetos": [
+    {
+      "tipo": "arma",
+      "nombre": "arma de fuego adaptada",
+      "cantidad": null,
+      "unidad": null
+    },
+    {
+      "tipo": "municion",
+      "nombre": "municiones",
+      "cantidad": null,
+      "unidad": null
+    }
+  ],
+  "relaciones": [
+    {
+      "origen": "Paulina Cáceres Espinoza",
+      "tipo": "VICTIMA_DE",
+      "destino": "femicidio"
+    },
+    {
+      "origen": "L. M. P",
+      "tipo": "IMPUTADO_POR",
+      "destino": "femicidio"
+    },
+    {
+      "origen": "L. M. P",
+      "tipo": "IMPUTADO_POR",
+      "destino": "porte ilegal de armas"
+    },
+    {
+      "origen": "femicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "Ovalle"
+    },
+    {
+      "origen": "Fiscalía",
+      "tipo": "INVESTIGA",
+      "destino": "femicidio"
+    },
+    {
+      "origen": "L. M. P",
+      "tipo": "UTILIZO",
+      "destino": "arma de fuego adaptada"
+    }
+  ]
+}

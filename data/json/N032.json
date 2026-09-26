@@ -1,0 +1,68 @@
+{
+  "id_noticia": "N032",
+  "titulo": "Detienen en La Serena a dos implicados más en crimen en motel ovallino",
+  "fecha_publicacion": null,
+  "fuente": "ElOvallino",
+  "url": "https://www.elovallino.cl/detienen-en-la-serena-a-dos-implicados-mas-en-crimen-en-motel-ovallino/",
+  "resumen": "La PDI detuvo en La Serena a dos sujetos implicados en un homicidio con arma de fuego ocurrido en noviembre del año pasado en un motel de Ovalle, sumándose a un primer detenido la semana anterior.",
+  "delitos": [
+    "homicidio"
+  ],
+  "personas": [
+    {
+      "nombre": null,
+      "rol": "victima"
+    },
+    {
+      "nombre": null,
+      "rol": "detenido"
+    },
+    {
+      "nombre": null,
+      "rol": "detenido"
+    },
+    {
+      "nombre": null,
+      "rol": "detenido"
+    }
+  ],
+  "organizaciones": [
+    "PDI",
+    "Ministerio Público",
+    "Brigada de Homicidios de La Serena"
+  ],
+  "lugares": [
+    "La Serena",
+    "Ovalle"
+  ],
+  "objetos": [
+    {
+      "tipo": "armas",
+      "nombre": "arma de fuego",
+      "cantidad": null,
+      "unidad": null
+    }
+  ],
+  "relaciones": [
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "Ovalle"
+    },
+    {
+      "origen": "PDI",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "Ministerio Público",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "Brigada de Homicidios de La Serena",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    }
+  ]
+}

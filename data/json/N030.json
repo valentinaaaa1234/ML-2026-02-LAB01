@@ -1,0 +1,62 @@
+{
+  "id_noticia": "N030",
+  "titulo": "Investigan homicidio ocurrido en La Serena",
+  "fecha_publicacion": "2025-05-30",
+  "fuente": "LaSerenaOnline",
+  "url": "https://laserenaonline.cl/2025/05/30/investigan-homicidio-ocurrido-en-la-serena/",
+  "resumen": "La Policía de Investigaciones investiga el homicidio de un hombre no identificado, cuyo cuerpo fue encontrado con heridas cortantes en la vía pública en el sector de calle Guatemala, Compañía Alta, en La Serena.",
+  "delitos": [
+    "homicidio"
+  ],
+  "personas": [
+    {
+      "nombre": null,
+      "rol": "victima"
+    }
+  ],
+  "organizaciones": [
+    "Brigada de Homicidios de La Serena",
+    "Laboratorio de Criminalística Regional",
+    "Policía de Investigaciones"
+  ],
+  "lugares": [
+    "La Serena",
+    "calle Guatemala",
+    "Compañía Alta"
+  ],
+  "objetos": [
+    {
+      "tipo": "arma",
+      "nombre": "arma cortante",
+      "cantidad": null,
+      "unidad": null
+    }
+  ],
+  "relaciones": [
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "La Serena"
+    },
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "calle Guatemala"
+    },
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "Compañía Alta"
+    },
+    {
+      "origen": "Brigada de Homicidios de La Serena",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "Policía de Investigaciones",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    }
+  ]
+}

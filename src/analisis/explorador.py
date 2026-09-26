@@ -18,6 +18,7 @@ import matplotlib
 # Backend sin ventana: solo se guardan archivos PNG, no se abren ventanas.
 matplotlib.use("Agg")
 
+import matplotlib.colors as colors  # noqa: E402
 import matplotlib.pyplot as plt  # noqa: E402  (debe ir después de matplotlib.use)
 import pandas as pd  # noqa: E402
 
@@ -318,6 +319,201 @@ class ExploradorDatos:
         print(f"  Gráfico guardado: {ruta}")
         return ruta
 
+    def delitos_por_lugar(self, top_delitos: int = 8, top_lugares: int = 10) -> Path | None:
+        """Cruce delito x lugar: dónde se concentra cada tipo de delito.
+
+        La guía pide "delitos por comuna o región", que es un cruce de dos
+        variables y no un ranking. Se usa un mapa de calor porque la
+        pregunta es de magnitud sobre una grilla: qué celda concentra más
+        noticias. Un gráfico de barras agrupadas con 8x10 combinaciones
+        sería ilegible.
+
+        La escala es de un solo tono (claro a oscuro) porque codifica
+        cantidad, no identidad: usar varios colores sugeriría categorías
+        distintas donde solo hay más o menos noticias.
+        """
+        noticias = self.cargar()
+        if not noticias:
+            print("Sin noticias que analizar.")
+            return None
+
+        # Delitos y lugares más frecuentes: el resto se deja fuera porque
+        # aportaría filas y columnas casi vacías.
+        conteo_delitos: Counter[str] = Counter()
+        conteo_lugares: Counter[str] = Counter()
+        for data in noticias:
+            for delito in data.get("delitos") or []:
+                if delito:
+                    conteo_delitos[str(delito).strip().lower()] += 1
+            for lugar in data.get("lugares") or []:
+                if lugar:
+                    conteo_lugares[str(lugar).strip().lower()] += 1
+
+        delitos = [nombre for nombre, _ in conteo_delitos.most_common(top_delitos)]
+        lugares = [nombre for nombre, _ in conteo_lugares.most_common(top_lugares)]
+        if not delitos or not lugares:
+            print("No hay delitos o lugares suficientes para el cruce.")
+            return None
+
+        # Celda = número de noticias donde ese delito y ese lugar aparecen juntos.
+        matriz = pd.DataFrame(0, index=delitos, columns=lugares, dtype=int)
+        for data in noticias:
+            delitos_noticia = {
+                str(d).strip().lower() for d in (data.get("delitos") or []) if d
+            }
+            lugares_noticia = {
+                str(l).strip().lower() for l in (data.get("lugares") or []) if l
+            }
+            for delito in delitos_noticia & set(delitos):
+                for lugar in lugares_noticia & set(lugares):
+                    matriz.loc[delito, lugar] += 1
+
+        self.dir_figuras.mkdir(parents=True, exist_ok=True)
+
+        # Rampa de un solo tono construida desde el azul de los demás
+        # gráficos, para que toda la serie de figuras se lea como un sistema.
+        rampa = colors.LinearSegmentedColormap.from_list(
+            "azul_lab", ["#f2f6fa", COLOR_BARRA]
+        )
+
+        figura, ejes = plt.subplots(
+            figsize=(1.0 * len(lugares) + 3.2, 0.52 * len(delitos) + 2.4)
+        )
+        maximo = int(matriz.values.max()) or 1
+        malla = ejes.pcolormesh(
+            matriz.values,
+            cmap=rampa,
+            vmin=0,
+            vmax=maximo,
+            edgecolors="white",
+            linewidth=2,
+        )
+
+        ejes.set_xticks([i + 0.5 for i in range(len(lugares))])
+        ejes.set_yticks([i + 0.5 for i in range(len(delitos))])
+        ejes.set_xticklabels(lugares, rotation=45, ha="right", fontsize=9)
+        ejes.set_yticklabels(delitos, fontsize=9)
+        ejes.invert_yaxis()
+
+        # Valor dentro de cada celda con carga: el color da la lectura
+        # rápida, el número permite citarlo en el informe.
+        for fila in range(len(delitos)):
+            for columna in range(len(lugares)):
+                valor = int(matriz.iloc[fila, columna])
+                if not valor:
+                    continue
+                # Texto claro sobre celdas oscuras para mantener contraste.
+                tinta = "#ffffff" if valor > maximo * 0.55 else "#2b2b2b"
+                ejes.text(
+                    columna + 0.5,
+                    fila + 0.5,
+                    str(valor),
+                    ha="center",
+                    va="center",
+                    fontsize=9,
+                    color=tinta,
+                )
+
+        ejes.set_title(
+            "Delitos por lugar (noticias en que aparecen juntos)",
+            fontsize=13,
+            pad=12,
+            loc="left",
+        )
+        for lado in ("top", "right", "left", "bottom"):
+            ejes.spines[lado].set_visible(False)
+        ejes.tick_params(length=0)
+
+        barra = figura.colorbar(malla, ax=ejes, shrink=0.75)
+        barra.set_label("Noticias", fontsize=9)
+        barra.outline.set_visible(False)
+
+        figura.tight_layout()
+        ruta = self.dir_figuras / "delitos_por_lugar.png"
+        figura.savefig(ruta, dpi=150)
+        plt.close(figura)
+
+        print("\nCruce delito x lugar (celdas con valor):")
+        for delito in delitos:
+            fila = matriz.loc[delito]
+            activos = [f"{lugar}={int(v)}" for lugar, v in fila.items() if v]
+            if activos:
+                print(f"  {delito}: {', '.join(activos)}")
+        print(f"  Gráfico guardado: {ruta}")
+        return ruta
+
+    def entidades_por_noticia(self) -> Path | None:
+        """Cuántas personas y organizaciones trae cada noticia.
+
+        Se grafica la distribución (cuántas noticias tienen 0, 1, 2...
+        entidades) y no una barra por noticia: con 39 noticias el eje
+        quedaría ilegible y la pregunta interesante no es qué noticia
+        puntual trae más, sino si el LLM extrae entidades de forma pareja.
+
+        Dos paneles en vez de dos series superpuestas: las escalas son
+        distintas y superponerlas obligaría a leer dos colores donde basta
+        con mirar dos veces.
+        """
+        noticias = self.cargar()
+        if not noticias:
+            print("Sin noticias que analizar.")
+            return None
+
+        self.dir_figuras.mkdir(parents=True, exist_ok=True)
+        figura, paneles = plt.subplots(1, 2, figsize=(11, 4.2))
+
+        for panel, (campo, etiqueta) in zip(
+            paneles, (("personas", "Personas"), ("organizaciones", "Organizaciones"))
+        ):
+            cantidades = [len(n.get(campo) or []) for n in noticias]
+            distribucion = Counter(cantidades)
+            maximo_entidades = max(cantidades) if cantidades else 0
+            ejes_x = list(range(maximo_entidades + 1))
+            valores = [distribucion.get(x, 0) for x in ejes_x]
+
+            panel.bar(ejes_x, valores, color=COLOR_BARRA, width=0.68)
+
+            tope = max(valores) if valores else 1
+            for x, valor in zip(ejes_x, valores):
+                if valor:
+                    panel.text(
+                        x,
+                        valor + tope * 0.04,
+                        str(valor),
+                        ha="center",
+                        fontsize=9,
+                        color="#444444",
+                    )
+
+            promedio = sum(cantidades) / len(cantidades)
+            panel.set_title(
+                f"{etiqueta} por noticia (promedio {promedio:.1f})",
+                fontsize=12,
+                pad=10,
+                loc="left",
+            )
+            panel.set_xlabel(f"{etiqueta} extraídas en la noticia", fontsize=10)
+            panel.set_ylabel("Cantidad de noticias", fontsize=10)
+            panel.set_ylim(0, tope * 1.18)
+            panel.set_xticks(ejes_x)
+            panel.grid(axis="y", color="#dddddd", linewidth=0.8)
+            panel.set_axisbelow(True)
+            for lado in ("top", "right"):
+                panel.spines[lado].set_visible(False)
+
+            print(f"\n{etiqueta} por noticia:")
+            for x in ejes_x:
+                if distribucion.get(x):
+                    print(f"  {x} {etiqueta.lower()}: {distribucion[x]} noticias")
+            print(f"  promedio: {promedio:.2f}")
+
+        figura.tight_layout()
+        ruta = self.dir_figuras / "entidades_por_noticia.png"
+        figura.savefig(ruta, dpi=150)
+        plt.close(figura)
+        print(f"  Gráfico guardado: {ruta}")
+        return ruta
+
     # ------------------------------------------------------------------
     # Resumen y orquestación
     # ------------------------------------------------------------------
@@ -364,6 +560,8 @@ class ExploradorDatos:
         self.noticias_por_fuente()
         self.delitos_frecuentes()
         self.lugares_frecuentes()
+        self.delitos_por_lugar()
+        self.entidades_por_noticia()
         self.campos_faltantes()
         self.evolucion_temporal()
         print(f"\nFiguras guardadas en: {self.dir_figuras}")

@@ -1,0 +1,64 @@
+{
+  "id_noticia": "N002",
+  "titulo": "Violencia no da tregua: Acribillamiento en Coquimbo eleva preocupación por seguidilla de asesinatos",
+  "fecha_publicacion": "2026-08-27",
+  "fuente": "DiarioElDia",
+  "url": "https://www.diarioeldia.cl/noticias/2026/08/27/149036-violencia-no-da-tregua-acribillamiento-en-coquimbo-eleva-preocupacion-por-seguidilla-de-asesinatos",
+  "resumen": "Un hombre de 32 años fue asesinado a balazos al interior de su vivienda en el sector de Villa Portugal, en la comuna de Coquimbo. El ataque fue perpetrado por al menos tres sujetos que ingresaron al inmueble. La PDI, Carabineros y la Fiscalía ECOH trabajan en el esclarecimiento del caso.",
+  "delitos": [
+    "homicidio"
+  ],
+  "personas": [
+    {
+      "nombre": null,
+      "rol": "victima"
+    }
+  ],
+  "organizaciones": [
+    "PDI",
+    "Carabineros",
+    "Fiscalía de Equipos de Crimen Organizado y Homicidios (ECOH) de Coquimbo",
+    "Ministerio Público",
+    "municipio de Coquimbo"
+  ],
+  "lugares": [
+    "Coquimbo",
+    "Villa Portugal",
+    "La Serena"
+  ],
+  "objetos": [
+    {
+      "tipo": "armas",
+      "nombre": "arma de fuego",
+      "cantidad": null,
+      "unidad": null
+    }
+  ],
+  "relaciones": [
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "Coquimbo"
+    },
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "Villa Portugal"
+    },
+    {
+      "origen": "PDI",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "Carabineros",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "Fiscalía de Equipos de Crimen Organizado y Homicidios (ECOH) de Coquimbo",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    }
+  ]
+}

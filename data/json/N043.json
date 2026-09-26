@@ -1,0 +1,86 @@
+{
+  "id_noticia": "N043",
+  "titulo": "Condenan a ciudadano venezolano por el homicidio del médico Nicolás Pinochet en La Serena",
+  "fecha_publicacion": "2025-10-17",
+  "fuente": "BioBioChile",
+  "url": "https://www.biobiochile.cl/noticias/nacional/region-de-coquimbo/2025/10/17/condenan-a-ciudadano-venezolano-por-el-homicidio-del-medico-nicolas-pinochet-en-la-serena.shtml",
+  "resumen": "Un ciudadano venezolano en situación irregular fue condenado por el Tribunal de Juicio Oral en lo Penal de La Serena como autor del homicidio calificado del médico Nicolás Pinochet García, ocurrido en julio de 2024 en un sitio eriazo de la ruta 5 Norte.",
+  "delitos": [
+    "homicidio"
+  ],
+  "personas": [
+    {
+      "nombre": "Nicolás Pinochet García",
+      "rol": "victima"
+    },
+    {
+      "nombre": "C.T.A.L.",
+      "rol": "condenado"
+    },
+    {
+      "nombre": null,
+      "rol": "testigo"
+    }
+  ],
+  "organizaciones": [
+    "Tribunal de Juicio Oral en lo Penal de La Serena",
+    "Poder Judicial",
+    "Fiscalía"
+  ],
+  "lugares": [
+    "La Serena",
+    "ruta 5 Norte",
+    "Chile"
+  ],
+  "objetos": [
+    {
+      "tipo": "arma",
+      "nombre": "piedra",
+      "cantidad": null,
+      "unidad": null
+    },
+    {
+      "tipo": "arma",
+      "nombre": "elemento contuso",
+      "cantidad": null,
+      "unidad": null
+    }
+  ],
+  "relaciones": [
+    {
+      "origen": "Nicolás Pinochet García",
+      "tipo": "VICTIMA_DE",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "C.T.A.L.",
+      "tipo": "IMPUTADO_POR",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "La Serena"
+    },
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "ruta 5 Norte"
+    },
+    {
+      "origen": "C.T.A.L.",
+      "tipo": "UTILIZO",
+      "destino": "piedra"
+    },
+    {
+      "origen": "C.T.A.L.",
+      "tipo": "UTILIZO",
+      "destino": "elemento contuso"
+    },
+    {
+      "origen": "Fiscalía",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    }
+  ]
+}

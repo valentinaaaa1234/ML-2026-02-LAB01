@@ -1,0 +1,42 @@
+{
+  "id_noticia": "N047",
+  "titulo": "Tripulante boliviano apareció muerto dentro de una lancha",
+  "fecha_publicacion": null,
+  "fuente": "DiarioLaRegion",
+  "url": "https://www.diariolaregion.cl/tripulante-boliviano-aparecio-muerto-dentro-de-una-lancha/",
+  "resumen": "Un tripulante de nacionalidad boliviana fue encontrado sin vida al interior de la lancha a motor BIANCA CATALINA II en la Caleta de Coquimbo. Personal de la Policía Marítima y de la Brigada de Homicidios realizan peritajes para establecer las causas del deceso.",
+  "delitos": [],
+  "personas": [
+    {
+      "nombre": null,
+      "rol": "victima"
+    }
+  ],
+  "organizaciones": [
+    "Capitanía de Puerto",
+    "Policía Marítima",
+    "Brigada de Homicidios",
+    "Gobernación Marítima de Coquimbo",
+    "Fiscalía ECO"
+  ],
+  "lugares": [
+    "Caleta de Coquimbo",
+    "Coquimbo",
+    "Lebu"
+  ],
+  "objetos": [
+    {
+      "tipo": "vehiculo",
+      "nombre": "BIANCA CATALINA II",
+      "cantidad": 1,
+      "unidad": "unidad"
+    }
+  ],
+  "relaciones": [
+    {
+      "origen": "BIANCA CATALINA II",
+      "tipo": "PERTENECE_A",
+      "destino": "Lebu"
+    }
+  ]
+}

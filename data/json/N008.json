@@ -1,0 +1,88 @@
+{
+  "id_noticia": "N008",
+  "titulo": "Las señales del preocupante repunte de homicidios en la región",
+  "fecha_publicacion": "2026-09-13",
+  "fuente": "DiarioElDia",
+  "url": "https://www.diarioeldia.cl/noticias/2026/09/13/150949-las-senales-del-preocupante-repunte-de-homicidios-en-la-region",
+  "resumen": "La Región de Coquimbo registra un aumento del 42,1% en los homicidios consumados durante el primer semestre de 2026, posicionándose como un foco de preocupación a nivel nacional. El incremento está asociado al mayor uso de armas de fuego y a delitos vinculados a grupos organizados, lo que ha llevado al Gobierno a reforzar planes de seguridad en la zona.",
+  "delitos": [
+    "homicidio",
+    "microtrafico"
+  ],
+  "personas": [
+    {
+      "nombre": "Anne Gray",
+      "rol": "victima"
+    }
+  ],
+  "organizaciones": [
+    "Ministerio Público",
+    "Carabineros",
+    "PDI",
+    "Gobierno"
+  ],
+  "lugares": [
+    "Región de Coquimbo",
+    "Antofagasta",
+    "Arica y Parinacota",
+    "La Serena",
+    "Coquimbo",
+    "Ovalle",
+    "Limarí",
+    "Choapa",
+    "Vicuña",
+    "La Pampilla",
+    "Ruta 5 Norte"
+  ],
+  "objetos": [
+    {
+      "tipo": "arma",
+      "nombre": "arma de fuego",
+      "cantidad": 1,
+      "unidad": "unidad"
+    },
+    {
+      "tipo": "droga",
+      "nombre": "cocaína",
+      "cantidad": null,
+      "unidad": null
+    }
+  ],
+  "relaciones": [
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "Región de Coquimbo"
+    },
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "La Serena"
+    },
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "Coquimbo"
+    },
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "Ovalle"
+    },
+    {
+      "origen": "microtrafico",
+      "tipo": "OCURRIO_EN",
+      "destino": "Vicuña"
+    },
+    {
+      "origen": "arma de fuego",
+      "tipo": "INCAUTADO_EN",
+      "destino": "Coquimbo"
+    },
+    {
+      "origen": "Ministerio Público",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "id_noticia": "N001",
+  "titulo": "Nuevo homicidio en La Serena: hombre muere acribillado en Caleta San Pedro",
+  "fecha_publicacion": "2026-09-08",
+  "fuente": "DiarioElDia",
+  "url": "https://www.diarioeldia.cl/noticias/2026/09/08/150326-nuevo-homicidio-en-la-serena-hombre-muere-acribillado-en-caleta-san-pedro",
+  "resumen": "Un hombre falleció en el Hospital de La Serena tras ser atacado con disparos en la Caleta San Pedro. El hecho ocurrió luego de que un grupo de personas llegara en un vehículo, ingresara a un inmueble y sustrajera especies. La PDI y el equipo ECOH de la Fiscalía realizan diligencias para esclarecer el caso.",
+  "delitos": [
+    "homicidio",
+    "robo"
+  ],
+  "personas": [
+    {
+      "nombre": null,
+      "rol": "victima"
+    }
+  ],
+  "organizaciones": [
+    "Hospital de La Serena",
+    "PDI",
+    "equipo ECOH",
+    "Fiscalía"
+  ],
+  "lugares": [
+    "La Serena",
+    "Caleta San Pedro"
+  ],
+  "objetos": [
+    {
+      "tipo": "vehiculo",
+      "nombre": "vehículo",
+      "cantidad": 1,
+      "unidad": null
+    },
+    {
+      "tipo": "especies",
+      "nombre": "especies",
+      "cantidad": null,
+      "unidad": null
+    }
+  ],
+  "relaciones": [
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "Caleta San Pedro"
+    },
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "La Serena"
+    },
+    {
+      "origen": "robo",
+      "tipo": "OCURRIO_EN",
+      "destino": "Caleta San Pedro"
+    },
+    {
+      "origen": "PDI",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "equipo ECOH",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "Fiscalía",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    }
+  ]
+}

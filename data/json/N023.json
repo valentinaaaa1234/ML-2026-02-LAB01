@@ -1,0 +1,42 @@
+{
+  "id_noticia": "N023",
+  "titulo": "Investigan homicidio de adulto mayor ocurrido en Salamanca",
+  "fecha_publicacion": null,
+  "fuente": "LaSerenaOnline",
+  "url": "https://laserenaonline.cl/2026/08/21/investigan-homicidio-de-adulto-mayor-ocurrido-en-salamanca/",
+  "resumen": "La Brigada de Homicidios La Serena investiga el fallecimiento de un hombre de 84 años en la comuna de Salamanca, el cual fue encontrado en su domicilio por familiares y cuyo deceso es preliminarmente atribuible a la acción de terceras personas.",
+  "delitos": [
+    "homicidio"
+  ],
+  "personas": [
+    {
+      "nombre": null,
+      "rol": "victima"
+    }
+  ],
+  "organizaciones": [
+    "Brigada de Homicidios La Serena",
+    "Fiscalía Macrozona Norte"
+  ],
+  "lugares": [
+    "Salamanca"
+  ],
+  "objetos": [],
+  "relaciones": [
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "Salamanca"
+    },
+    {
+      "origen": "Brigada de Homicidios La Serena",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "Fiscalía Macrozona Norte",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    }
+  ]
+}

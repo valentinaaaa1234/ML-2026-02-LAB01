@@ -1,0 +1,71 @@
+{
+  "id_noticia": "N019",
+  "titulo": "PDI investiga homicidio y homicidio frustrado en La Serena",
+  "fecha_publicacion": "2026-09-06",
+  "fuente": "LaSerenaOnline",
+  "url": "https://laserenaonline.cl/2026/09/06/pdi-investiga-homicidio-y-homicidio-frustrado-en-la-serena/",
+  "resumen": "La PDI y la Fiscalía investigan un homicidio con arma de fuego y un homicidio frustrado ocurridos en La Serena, luego de que dos ciudadanos venezolanos ingresaran heridos a bala al Hospital de La Serena, falleciendo uno de ellos.",
+  "delitos": [
+    "homicidio",
+    "homicidio frustrado"
+  ],
+  "personas": [
+    {
+      "nombre": null,
+      "rol": "victima"
+    },
+    {
+      "nombre": null,
+      "rol": "victima"
+    }
+  ],
+  "organizaciones": [
+    "PDI",
+    "Fiscalía Macrozona Norte",
+    "Hospital de La Serena",
+    "Laboratorio de Criminalística Regional"
+  ],
+  "lugares": [
+    "La Serena"
+  ],
+  "objetos": [
+    {
+      "tipo": "arma",
+      "nombre": "arma de fuego",
+      "cantidad": null,
+      "unidad": null
+    }
+  ],
+  "relaciones": [
+    {
+      "origen": "PDI",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "PDI",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio frustrado"
+    },
+    {
+      "origen": "Fiscalía Macrozona Norte",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "Fiscalía Macrozona Norte",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio frustrado"
+    },
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "La Serena"
+    },
+    {
+      "origen": "homicidio frustrado",
+      "tipo": "OCURRIO_EN",
+      "destino": "La Serena"
+    }
+  ]
+}

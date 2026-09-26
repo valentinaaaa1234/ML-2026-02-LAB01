@@ -1,0 +1,65 @@
+{
+  "id_noticia": "N029",
+  "titulo": "Investigan homicidio tras riña en Coquimbo",
+  "fecha_publicacion": "2026-03-04",
+  "fuente": "LaSerenaOnline",
+  "url": "https://laserenaonline.cl/2026/03/04/investigan-homicidio-tras-rina-en-coquimbo/",
+  "resumen": "Un hombre no identificado falleció en el Hospital de Coquimbo tras ser agredido con un arma cortante durante una riña en la calle Melgarejo. Carabineros detuvo a un ciudadano extranjero en flagrancia como presunto autor del hecho, quien quedó a disposición de la PDI por orden de la fiscalía.",
+  "delitos": [
+    "homicidio"
+  ],
+  "personas": [
+    {
+      "nombre": null,
+      "rol": "victima"
+    },
+    {
+      "nombre": null,
+      "rol": "detenido"
+    }
+  ],
+  "organizaciones": [
+    "Brigada de Homicidios La Serena",
+    "Carabineros",
+    "PDI",
+    "Hospital de Coquimbo",
+    "Laboratorio de Criminalística Regional",
+    "Ministerio Público",
+    "Juzgado de Garantía de Coquimbo"
+  ],
+  "lugares": [
+    "Coquimbo",
+    "calle Melgarejo",
+    "ex Casa de la Cultura de Coquimbo"
+  ],
+  "objetos": [
+    {
+      "tipo": "arma",
+      "nombre": "arma cortante",
+      "cantidad": null,
+      "unidad": null
+    }
+  ],
+  "relaciones": [
+    {
+      "origen": "PDI",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "Brigada de Homicidios La Serena",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "calle Melgarejo"
+    },
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "Coquimbo"
+    }
+  ]
+}

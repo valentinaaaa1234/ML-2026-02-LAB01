@@ -1,0 +1,55 @@
+{
+  "id_noticia": "N020",
+  "titulo": "PDI investiga homicidio con arma de fuego en Coquimbo",
+  "fecha_publicacion": "2026-08-28",
+  "fuente": "LaSerenaOnline",
+  "url": "https://laserenaonline.cl/2026/08/28/pdi-investiga-homicidio-con-arma-de-fuego-en-coquimbo/",
+  "resumen": "La Brigada de Homicidios de la PDI, en coordinación con la Fiscalía ECOH y el Ministerio Público, realiza diligencias para esclarecer el homicidio con arma de fuego de un hombre de 32 años, cuyo cuerpo fue hallado al interior de un inmueble en la comuna de Coquimbo.",
+  "delitos": [
+    "homicidio"
+  ],
+  "personas": [
+    {
+      "nombre": null,
+      "rol": "victima"
+    }
+  ],
+  "organizaciones": [
+    "PDI",
+    "Fiscalía ECOH Coquimbo",
+    "Ministerio Público"
+  ],
+  "lugares": [
+    "Coquimbo"
+  ],
+  "objetos": [
+    {
+      "tipo": "arma",
+      "nombre": "arma de fuego",
+      "cantidad": null,
+      "unidad": null
+    }
+  ],
+  "relaciones": [
+    {
+      "origen": "homicidio",
+      "tipo": "OCURRIO_EN",
+      "destino": "Coquimbo"
+    },
+    {
+      "origen": "PDI",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "Fiscalía ECOH Coquimbo",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    },
+    {
+      "origen": "Ministerio Público",
+      "tipo": "INVESTIGA",
+      "destino": "homicidio"
+    }
+  ]
+}
