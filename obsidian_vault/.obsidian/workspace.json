@@ -167,8 +167,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -181,7 +180,7 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "faa4958fb6cdfba1",
+  "active": "1f16aa3619a16011",
   "lastOpenFiles": [
     "Sin título.base",
     "grafooo/Bienvenido.md",
